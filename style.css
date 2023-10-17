@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, #aabb18, #065934, #92ad1c);
+  border: 1px solid black;
+}
+header > div {
+  border: 1px solid red;
+  height: 100%;
+  width: 50%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+header h3 {
+  width: 70%;
+  height: 100%;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  align-items: center;
+}
+header button {
+  width: 100px;
+  max-width: 120px;
+  height: 25px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
