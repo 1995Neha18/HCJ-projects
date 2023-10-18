@@ -128,3 +128,28 @@ input {
   font-size: 15px;
   font-weight: bold;
 }
+
+.banner {
+  width: 100%;
+  height: 30rem;
+}
+.banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn2 {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn2 > button {
+  width: 26rem;
+  height: 3.4rem;
+  margin-top: 1rem;
+  background-color: #065934;
+  color: white;
+  border-radius: 0.125rem;
+  border: none;
+}
