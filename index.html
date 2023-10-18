@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>C.G Figma</title>
   </head>
   <body>
@@ -18,16 +20,30 @@
       <div>
         <div class="navbar1">
           <img src="Images/logo.svg" alt="cg-logo" />
-          <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>Blogs</li>
-            <li>Contacts</li>
-            <li>Search</li>
-            <li>Login</li>
-            <li>SignUp</li>
-            <li>Cart</li>
-          </ul>
+          <div class="menu1">
+            <ul>
+              <li>Home</li>
+              <li class="product">Products</li>
+              <li>Blogs</li>
+              <li>Contacts</li>
+            </ul>
+          </div>
+
+          <div class="menu2">
+            <ul>
+              <li class="search">
+                <input type="text" placeholder="Search" />
+                <img src="Images/search.svg" alt="search-icon" />
+              </li>
+              <li>Login</li>
+              <li>
+                <button>SignUp</button>
+              </li>
+              <li class="cart">
+                <img src="images/cart.svg" alt="cart-icon" />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

@@ -1,16 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
   width: 100%;
-  height: 40px;
+  height: 2.5rem;
   background: linear-gradient(to right, #aabb18, #065934, #92ad1c);
-  border: 1px solid black;
 }
 header > div {
-  border: 1px solid red;
   height: 100%;
   width: 50%;
   margin: auto;
@@ -21,18 +20,92 @@ header > div {
 header h3 {
   width: 70%;
   height: 100%;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
   align-items: center;
 }
 header button {
-  width: 100px;
-  max-width: 120px;
-  height: 25px;
-  margin-top: 10px;
-  font-size: 15px;
+  width: 6.25rem;
+  max-width: 7.5rem;
+  height: 1.56rem;
+  margin-top: 0.625rem;
+  font-size: 1rem;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 0.312rem;
   border: none;
+}
+.navbar1 {
+  width: 90%;
+  height: 5rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar1 > img {
+  width: 10%;
+  height: 100%;
+}
+
+.menu1 {
+  width: 30%;
+  height: 100%;
+}
+.menu1 > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.menu2 {
+  width: 50%;
+  height: 100%;
+}
+.menu2 > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.5rem;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.menu2 > li > button {
+  width: 6.25rem;
+  height: 1.81rem;
+  background-color: #065934;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.31rem;
+}
+.search {
+  border: 1px solid black;
+  border-radius: 0.125rem;
+  width: 15rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.search > img {
+  width: 0.875rem;
+  height: 1rem;
+  margin-top: 0.625rem;
+}
+input {
+  border: none;
+  text-align: left;
+}
+.cart {
+  border-left: 2px solid green;
+}
+.cart > img {
+  margin-left: 0.625rem;
+}
+.product {
+  color: #065934;
+  font-weight: lighter;
 }
