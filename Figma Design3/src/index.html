@@ -7,39 +7,66 @@
     <title>Figma Design3</title>
   </head>
   <body>
-    <nav class="h-auto">
-      <div class="w-[90%] mx-auto my-4 h-[80%] flex justify-between">
-        <div class="w-[10%]">
-          <img src="/Images/logo.png.svg" alt="logo" class="w-full h-full" />
+    <main>
+      <nav class="h-auto">
+        <div class="w-[90%] mx-auto my-4 h-[80%] flex justify-between">
+          <div class="w-[15%]">
+            <img src="/Images/logo.png.svg" alt="logo" class="w-full h-8" />
+          </div>
+          <div class="w-[55%] my-auto">
+            <ul
+              class="flex justify-around items-center font-sans text-sm font-light leading-7"
+            >
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">Services</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Project</a>
+              </li>
+              <li>
+                <a href="">Help</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-[30%] flex justify-around text-[#0075FF]">
+            <button>Sign in</button>
+            <button>Sign up</button>
+          </div>
         </div>
-        <div class="w-[60%]">
-          <ul
-            class="flex justify-around font-sans text-sm font-light leading-7"
-          >
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Services</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-            <li>
-              <a href="">Project</a>
-            </li>
-            <li>
-              <a href="">Help</a>
-            </li>
-          </ul>
-        </div>
+      </nav>
+      <!-- { Banner } -->
+      <section class="bg-slate-400">
         <div
-          class="border w-[30%] flex justify-around text-[#0075FF] border-none"
+          class="container mx-auto w-full h-[800px] space-y-2 font-sans border border-red-700 bg-white"
         >
-          <button>Sign in</button>
-          <button>Sign up</button>
+          <div
+            class="w-[55%]  mx-auto mt-10 text-[#002834] text-center font-medium leading-[50px] border border-red-700"
+          >
+            <h1 class="text-5xl py-4">
+              Solve problem with an integrated agency.
+            </h1>
+          </div>
+          <div
+            class="w-[55%] mx-auto text-center text-[#7D82A1] text-xs font-base leading-6 border border-red-700"
+          >
+            <p >
+              Ehya is the Instagram analytics platform teams use to stay focused
+              on the goals, track engagement for report your business .
+            </p>
+          </div>
+           <div  class="w-[30%] mx-auto flex justify-around text-white border border-red-700">
+            <button class="bg-[#0075FF]">See our portfolio</button>
+            <button class="text-[#0075FF]">More info</button>
+           </div>
+
         </div>
-      </div>
-    </nav>
+      </section>
+    </main>
   </body>
 </html>
