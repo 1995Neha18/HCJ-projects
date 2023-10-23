@@ -380,7 +380,7 @@
             <img src="/images/Map.png" alt="Map" class="w-full h-full" />
           </div>
           <div
-            class="w-[95%] mx-auto px-8 border border-red-700 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20 py-8"
+            class="w-[95%] mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20 py-8"
           >
             <div class="w-[160px] bg-white shadow-xl rounded-lg">
               <div class="w-[90%] mx-auto p-4 space-y-2">
@@ -490,136 +490,138 @@
 
       <!-- { Sign Up } -->
       <section>
-        <div
-          class="container w-full mx-auto border border-red-700 bg-[#0075ff] h-[240px] rounded-lg flex justify-center"
-        >
-          <div class="w-1/2 border border-red-700 mt-10">
-            <img src="/Images/blue.png" alt="image" class="w-full h-full" />
+        <section class="relative">
+          <div
+            class="container w-full mx-auto bg-[#0075ff] h-[240px] rounded-lg flex justify-center"
+          >
+            <div class="w-1/2 mt-10">
+              <img src="/Images/blue.png" alt="image" class="w-full h-full" />
+            </div>
+            <div class="w-1/2">
+              <div class="w-[80%] h-[80%] mx-auto my-8 space-y-2">
+                <h4
+                  class="text-white text-3xl font-semibold leading-[40px] w-[280px]"
+                >
+                  Sign up to our newsletter.
+                </h4>
+                <p class="text-white text-xs leading-[20px] font-normal">
+                  Craven omni memoria patriae zombieland clairvius narcisse
+                  religionis sunt diri undead historiarum.
+                </p>
+                <div class="w-full flex justify-between">
+                  <input
+                    type="text"
+                    placeholder="@enter email-adress"
+                    class="w-[100%] rounded-md"
+                  />
+                  <button class="bg-[#00276F] w-10 h-10">
+                    <img
+                      src="/Images/plane.svg.svg"
+                      alt="plane"
+                      class="w-4 h-4 m-auto"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="w-1/2 border border-red-700">
-            <div
-              class="w-[80%] h-[80%] mx-auto my-8 border border-red-700 space-y-2"
-            >
-              <h4
-                class="text-white text-3xl font-semibold leading-[40px] w-[280px]"
-              >
-                Sign up to our newsletter.
-              </h4>
-              <p class="text-white text-xs leading-[20px] font-normal">
-                Craven omni memoria patriae zombieland clairvius narcisse
-                religionis sunt diri undead historiarum.
-              </p>
-              <div class="w-full border border-red-700 flex justify-between">
-                <input
-                  type="text"
-                  placeholder="@enter email-adress"
-                  class="w-[100%] rounded-md"
-                />
-                <button class="bg-[#00276F] w-10 h-10">
+        </section>
+
+        <footer
+          class="absolute w-full bg-black -mt-20 max-h-[800px] flex flex-col justify-center"
+        >
+          <div class="w-[80%] mx-auto mt-20 flex justify-between">
+            <div class="w-[25%] space-y-4">
+              <img
+                src="/Images/logo.png.svg"
+                alt="footer-logo"
+                class="cursor-pointer"
+              />
+              <div class="w-[80%] flex justify-around cursor-pointer">
+                <button class="w-10 h-10 rounded-full bg-[#404259]">
                   <img
-                    src="/Images/plane.svg.svg"
-                    alt="plane"
-                    class="w-4 h-4 m-auto"
+                    src="/Images/facebook.svg.svg"
+                    alt="facebook"
+                    class="mx-auto"
+                  />
+                </button>
+                <button class="w-10 h-10 rounded-full bg-[#404259]">
+                  <img
+                    src="/Images/twitter.svg.svg"
+                    alt="twitter"
+                    class="mx-auto"
+                  />
+                </button>
+                <button class="w-10 h-10 rounded-full bg-[#404259]">
+                  <img
+                    src="/Images/instagram.svg.svg"
+                    alt="instagram"
+                    class="mx-auto"
                   />
                 </button>
               </div>
             </div>
+            <div
+              class="w-[20%] space-y-4 cursor-pointer text-left text-white text-sm font-normal leading-[20px]"
+            >
+              <p>Home</p>
+              <p>Popular</p>
+              <p>About</p>
+              <p>Contact</p>
+            </div>
+
+            <div
+              class="w-[20%] space-y-4 cursor-pointer text-left text-white text-sm font-normal leading-[20px]"
+            >
+              <p>Help</p>
+              <p>Resources</p>
+              <p>Application</p>
+              <p>Terms</p>
+            </div>
+            <div class="w-[24%] cursor-pointer space-y-8">
+              <div class="flex justify-between">
+                <img
+                  src="/Images/Navigation.svg"
+                  alt="navigation"
+                  class="w-[18px] h-[20px] bg-blue-700"
+                />
+                <p class="text-xs font-normal text-white leading-[20px]">
+                  925 Filbert Street Pennsylvania 18072
+                </p>
+              </div>
+              <div class="flex justify-between">
+                <img
+                  src="/Images/Phone.svg"
+                  alt="Phone"
+                  class="w-[18px] h-[20px] bg-blue-700"
+                />
+                <p class="text-xs font-normal text-white leading-[20px]">
+                  925 Filbert Street Pennsylvania 18072
+                </p>
+              </div>
+              <div class="flex justify-between">
+                <img
+                  src="/Images/email.svg (1).svg"
+                  alt="email"
+                  class="w-[18px] h-[20px] text-blue-700"
+                />
+                <p class="text-xs font-normal text-white leading-[20px]">
+                  925 Filbert Street Pennsylvania 18072
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
+          <hr class="w-[80%] mx-auto mt-10" />
+          <div class="w-[80%] mx-auto mb-10 py-4 flex justify-between">
+            <p class="text-xs font-normal text-[#FFFFFFBF] leading-[20px]">
+              @2023 Agency. All Rights Reserved by Adminmart.com
+            </p>
+            <p class="text-xs font-normal text-[#FFFFFFBF] leading-[20px]">
+              Privacy Policy &nbsp; <span>I</span> &nbsp; Terms & Conditions
+            </p>
+          </div>
+        </footer>
       </section>
-
-      <footer class="bg-black max-h-[800px] flex flex-col justify-center">
-        <div class="w-[80%] mx-auto mt-10 flex justify-between">
-          <div class="w-[25%] space-y-4">
-            <img
-              src="/Images/logo.png.svg"
-              alt="footer-logo"
-              class="cursor-pointer"
-            />
-            <div class="w-[80%] flex justify-around cursor-pointer">
-              <button class="w-10 h-10 rounded-full bg-[#404259]">
-                <img
-                  src="/Images/facebook.svg.svg"
-                  alt="facebook"
-                  class="mx-auto"
-                />
-              </button>
-              <button class="w-10 h-10 rounded-full bg-[#404259]">
-                <img
-                  src="/Images/twitter.svg.svg"
-                  alt="twitter"
-                  class="mx-auto"
-                />
-              </button>
-              <button class="w-10 h-10 rounded-full bg-[#404259]">
-                <img
-                  src="/Images/instagram.svg.svg"
-                  alt="instagram"
-                  class="mx-auto"
-                />
-              </button>
-            </div>
-          </div>
-          <div class="w-[20%] space-y-4 cursor-pointer text-left">
-            <p class="text-white text-sm font-normal leading-[20px]">Home</p>
-            <p class="text-white text-sm font-normal leading-[20px]">Popular</p>
-            <p class="text-white text-sm font-normal leading-[20px]">About</p>
-            <p class="text-white text-sm font-normal leading-[20px]">Contact</p>
-          </div>
-
-          <div class="w-[20%] space-y-4 cursor-pointer text-left">
-            <p class="text-white text-sm font-normal leading-[20px]">Help</p>
-            <p class="text-white text-sm font-normal leading-[20px]">
-              Resources
-            </p>
-            <p class="text-white text-sm font-normal leading-[20px]">
-              Application
-            </p>
-            <p class="text-white text-sm font-normal leading-[20px]">Terms</p>
-          </div>
-          <div class="w-[24%] bg-slate-400 space-y-8">
-            <div class="flex justify-between">
-              <img
-                src="/Images/Navigation.svg"
-                alt="navigation"
-                class="w-[18px] h-[20px] text-blue-700"
-              />
-              <p class="text-xs font-normal text-white leading-[20px]">
-                925 Filbert Street Pennsylvania 18072
-              </p>
-            </div>
-            <div class="flex justify-between">
-              <img
-                src="/Images/Phone.svg"
-                alt="Phone"
-                class="w-[18px] h-[20px] text-blue-700"
-              />
-              <p class="text-xs font-normal text-white leading-[20px]">
-                925 Filbert Street Pennsylvania 18072
-              </p>
-            </div>
-            <div class="flex justify-between">
-              <img
-                src="/Images/email.svg (1).svg"
-                alt="email"
-                class="w-[18px] h-[20px] text-blue-700"
-              />
-              <p class="text-xs font-normal text-white leading-[20px]">
-                925 Filbert Street Pennsylvania 18072
-              </p>
-            </div>
-          </div>
-        </div>
-        <hr class="w-[80%] mx-auto mt-10" />
-        <div class="w-[80%] mx-auto mb-10 py-4 flex justify-between">
-          <p class="text-xs font-normal text-[#FFFFFFBF] leading-[20px]">
-            @2023 Agency. All Rights Reserved by Adminmart.com
-          </p>
-          <p class="text-xs font-normal text-[#FFFFFFBF] leading-[20px]">
-            Privacy Policy &nbsp; <span>I</span> &nbsp; Terms & Conditions
-          </p>
-        </div>
-      </footer>
     </main>
   </body>
 </html>
