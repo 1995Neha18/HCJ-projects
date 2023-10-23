@@ -1,0 +1,65 @@
+<svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="55" height="56" fill="#1E1E1E"/>
+<rect id="Rectangle 1" x="-2661.5" y="-5160.5" width="11931" height="10446" fill="white" stroke="black"/>
+<g id="Main">
+<g id="div.demo-preview-wrapper">
+<rect x="-43.5" y="-4684.5" width="1023" height="618.66" fill="#1C2028"/>
+<g id="div.demo-preview-content">
+<rect width="1024" height="619.66" transform="translate(-44 -4685)" fill="white"/>
+<g id="Iframe">
+</g>
+</g>
+<rect x="-43.5" y="-4684.5" width="1023" height="618.66" stroke="black"/>
+</g>
+<g id="div#project">
+<rect x="-51.5" y="-963.71" width="1023" height="1255.77" fill="#E2F3F9"/>
+<g id="div.mx-auto">
+<g id="div.grid">
+<g id="div.bg-white" filter="url(#filter0_dd_0_1)">
+<rect x="-20" y="-19.4502" width="216" height="232" rx="16" fill="white"/>
+<g id="div.flex">
+<g id="Img:margin">
+<g id="bangladesh.svg" clip-path="url(#clip0_0_1)">
+<g id="bangladesh.svg fill" clip-path="url(#clip1_0_1)">
+<g id="bangladesh.svg_2">
+<path id="Vector" d="M27.5 53.8311C41.7386 53.8311 53.2812 42.2884 53.2812 28.0498C53.2812 13.8112 41.7386 2.26855 27.5 2.26855C13.2614 2.26855 1.71875 13.8112 1.71875 28.0498C1.71875 42.2884 13.2614 53.8311 27.5 53.8311Z" fill="#75A843"/>
+<path id="Vector_2" d="M27.5 53.8311C41.7386 53.8311 53.2812 42.2884 53.2812 28.0498C53.2812 13.8112 41.7386 2.26855 27.5 2.26855C13.2614 2.26855 1.71875 13.8112 1.71875 28.0498C1.71875 42.2884 13.2614 53.8311 27.5 53.8311Z" fill="#699635"/>
+<path id="Vector_3" d="M22.3441 40.167C29.0362 40.167 34.4613 34.7419 34.4613 28.0498C34.4613 21.3577 29.0362 15.9326 22.3441 15.9326C15.652 15.9326 10.2269 21.3577 10.2269 28.0498C10.2269 34.7419 15.652 40.167 22.3441 40.167Z" fill="#ED4C5C"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<rect x="-51.5" y="-963.71" width="1023" height="1255.77" stroke="black"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_dd_0_1" x="-40" y="-19.4502" width="256" height="272" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6" operator="erode" in="SourceAlpha" result="effect1_dropShadow_0_1"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="5" operator="erode" in="SourceAlpha" result="effect2_dropShadow_0_1"/>
+<feOffset dy="20"/>
+<feGaussianBlur stdDeviation="12.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_0_1" result="effect2_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_0_1" result="shape"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="55" height="55" fill="white" transform="translate(0 0.549805)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="55" height="55" fill="white" transform="translate(0 0.549805)"/>
+</clipPath>
+</defs>
+</svg>
