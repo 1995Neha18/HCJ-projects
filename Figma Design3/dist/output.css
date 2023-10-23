@@ -602,6 +602,11 @@ video {
   margin-bottom: auto;
 }
 
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -656,6 +661,10 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .flex {
@@ -756,6 +765,30 @@ video {
 
 .h-\[\] {
   height: ;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[8\] {
+  height: 8;
+}
+
+.h-\[240px\] {
+  height: 240px;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-\[0px\] {
+  height: 0px;
+}
+
+.h-\[40px\] {
+  height: 40px;
 }
 
 .max-h-16 {
@@ -962,12 +995,28 @@ video {
   width: 3rem;
 }
 
+.w-\[280px\] {
+  width: 280px;
+}
+
+.w-\[8\] {
+  width: 8;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .max-w-\[280px\] {
   max-width: 280px;
 }
 
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-2 {
@@ -1000,6 +1049,10 @@ video {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1062,6 +1115,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-tl-none {
@@ -1128,6 +1185,21 @@ video {
 .bg-\[\#e2f3f9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(226 243 249 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#0075ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 117 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#00276F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 39 111 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -1316,6 +1388,22 @@ video {
   line-height: 70px;
 }
 
+.leading-\[28\] {
+  line-height: 28;
+}
+
+.leading-\[4px\] {
+  line-height: 4px;
+}
+
+.leading-\[40px\] {
+  line-height: 40px;
+}
+
+.leading-\[2px\] {
+  line-height: 2px;
+}
+
 .text-\[\#00000080\] {
   color: #00000080;
 }
@@ -1372,6 +1460,15 @@ video {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-\[\#90A3B4\] {
+  --tw-text-opacity: 1;
+  color: rgb(144 163 180 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFFFFFBF\] {
+  color: #FFFFFFBF;
 }
 
 .shadow-lg {
