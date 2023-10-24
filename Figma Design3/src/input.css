@@ -13,3 +13,6 @@
 .f-options > p:hover {
   color: slategray;
 }
+.options p:hover {
+  color: slategray;
+}

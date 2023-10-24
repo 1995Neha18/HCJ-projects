@@ -81,27 +81,30 @@
         <!-- { Image & svgs } -->
 
         <div
-          class="relative container w-full mx-auto min-h-screen flex justify-center items-center border-black"
+          class="relative mt-4 container w-full mx-auto min-h-screen flex justify-center items-center border-black border"
         >
-          <img
-            src="/Images/Image.svg"
-            alt="banner-image"
-            class="w-[80%] h-[80%] object-cover shadow-xl rounded-xl"
-          />
-          <div
-            class="w-[140px] h-[42px] absolute left-[20%] top-0 border border-black"
-          >
-            <img src="/Images/Green.svg" alt="green-svg " />
+          <div class="w-[80%] z-50">
+            <img
+              src="/Images/Image.svg"
+              alt="banner-image"
+              class="shadow-xl rounded-xl"
+            />
           </div>
-          <div class="w-[140px] h-[42px] absolute top-0 right-[20%]">
+          <div class="flex justify-between absolute top-0">
+            <img src="/Images/Green.svg" alt="Purple" />
             <img src="/Images/Purple.svg" alt="Purple" />
           </div>
-          <div class="w-[140px] h-[42px] absolute bottom-0 left-5">
+
+          <div class="w-[85%] flex justify-between absolute bottom-0">
+            <img src="/Images/Teal.svg" alt="Purple" />
+            <img src="/Images/Orange.svg" alt="Purple" />
+          </div>
+          <!-- <div class="w-[120px] h-[40px] absolute bottom-0 left-5">
             <img src="/Images/Teal.svg" alt="teal-svg" />
           </div>
-          <div class="w-[140px] h-[42px] absolute bottom-0 right-0">
+          <div class="w-[120px] h-[40px] absolute bottom-0 right-0">
             <img src="/Images/Orange.svg" alt="orange-svg" />
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -202,16 +205,12 @@
 
       <!-- { Grids } -->
       <section>
-        <div
-          class="container w-full mx-auto h-[500px] my-auto flex justify-between"
-        >
+        <div class="w-full h-[500px] my-auto flex justify-between">
           <div
-            class="border-2 border-purple-700 w-[40%] flex-col justify-center items-center"
+            class="w-[40%] flex-col justify-center items-center border-2 border-purple-700"
           >
-            <div class="w-[80%] mx-auto my-20">
-              <h2
-                class="text-5xl text-[#000000] font-bold leading-[66px] max-w-[300px]"
-              >
+            <div class="w-[80%] mx-auto my-20 space-y-2">
+              <h2 class="text-5xl text-[#000000] font-bold leading-[66px]">
                 We provide that service.
               </h2>
               <p
@@ -222,7 +221,7 @@
                 quae ab illo inventore veritatis et quasi architecto beatae
                 vitae dicta sunt explicabo
               </p>
-              <div class="flex justify-between w-[110px]">
+              <div class="flex justify-between w-[120px]">
                 <button class="text-[#0075FF] font-normal py-1">
                   Learn more
                 </button>
@@ -237,7 +236,7 @@
 
           <div class="w-[60%] flex justify-normal border border-red-700">
             <div
-              class="w-[60%] bg-white py-8 mr-24 grid grid-cols-2 grid-rows-2 gap-10"
+              class="w-full grid grid-cols-2 grid-rows-2 gap-10 border border-purple-700"
             >
               <div
                 class="w-[140px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-6 shadow-lg"
@@ -316,15 +315,13 @@
                 </div>
               </div>
             </div>
-
-            <div class="w-[40%] mx-auto my-10 bg-[#d5f1f9] rounded-lg"></div>
           </div>
         </div>
       </section>
 
       <!-- { Why we best } -->
       <section>
-        <div class="container w-full mx-auto">
+        <div class="w-full border border-red-700">
           <div class="w-[95%] h-[80%] mx-auto my-8 flex justify-between">
             <div class="w-1/2">
               <img
@@ -399,7 +396,7 @@
 
       <!-- { Network & details } -->
       <section>
-        <div class="container w-full mx-auto bg-[#e2f3f9] space-y-4">
+        <div class="bg-[#e2f3f9] space-y-4">
           <div class="w-[95%] m-auto">
             <h2
               class="text-5xl text-center font-bold leading-[70px] w-[50%] mx-auto py-8"
@@ -411,7 +408,7 @@
             <img src="/images/Map.png" alt="Map" class="w-full h-full" />
           </div>
           <div
-            class="w-[95%] mx-auto px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20 py-8"
+            class="w-[95%] mx-auto p-8 place-items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4"
           >
             <div class="w-[160px] bg-white shadow-xl rounded-lg">
               <div class="w-[90%] mx-auto p-4 space-y-2">
@@ -517,10 +514,10 @@
             class="w-full mx-auto h-[800px] bg-[url('/Images/Clients.png')] flex justify-center items-center"
           >
             <div
-              class="w-[420px] flex flex-col justify-center items-center space-y-1"
+              class="w-[420px] flex flex-col justify-center items-center space-y-1 border border-red-700"
             >
               <div class="w-[130px]">
-                <img src="/Images/Boy.png" alt="boy" class="object-cover" />
+                <img src="/Images/Boy.png" alt="boy" class="object-contain" />
               </div>
               <p
                 class="w-[80%] text-xs text-center text-[#90A3B4] font-normal leading-[20px]"
@@ -543,10 +540,12 @@
       <!-- { Sign Up } -->
 
       <section>
-        <footer class="bg-black max-h-[800px] flex flex-col justify-center">
+        <footer
+          class="bg-black max-h-[800px] mt-10 flex flex-col justify-center"
+        >
           <!-- { Sign Up } -->
-          <!-- <div
-            class="container w-full mx-auto -mt-20 bg-[#0075ff] h-[240px] rounded-lg flex justify-center"
+          <div
+            class="w-[95%] mx-auto z-50 -mt-40 bg-[#0075ff] h-[240px] rounded-lg flex justify-center"
           >
             <div class="w-1/2 mt-10">
               <img src="/Images/blue.png" alt="image" class="w-full h-full" />
@@ -578,7 +577,7 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
           <!-- --------------------- -->
           <div class="w-[90%] mx-auto mt-20 flex justify-between">
             <div class="w-[25%] space-y-2">
@@ -634,7 +633,7 @@
               <p>Application</p>
               <p>Terms</p>
             </div>
-            <div class="w-[33.33%] cursor-pointer space-y-6">
+            <div class="options w-[33.33%] cursor-pointer space-y-6">
               <div class="flex justify-normal">
                 <img
                   src="/Images/nav.svg"
