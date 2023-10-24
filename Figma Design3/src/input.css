@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@500&family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.f-options > p:hover {
+  color: slategray;
+}
