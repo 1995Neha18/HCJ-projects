@@ -142,31 +142,36 @@
                 .
               </p>
             </div>
+
             <div
-              class="w-[50%] sm:w-[33.33%] mx-auto flex flex-col sm:flex-row justify-around text-xs text-white font-medium space-y-4"
+              class="relative overflow-hidden w-full border-2 border-purple-700"
             >
               <img
                 src="/Images/Pcircle.svg"
                 alt="Pcircle"
-                class="absolute left-0 top-30"
+                class="absolute left-2 -bottom-10"
               />
-              <button
-                class="w-[180px] sm:w-[150px] bg-[#0075FF] h-14 rounded-full rounded-tl-none"
+              <div
+                class="border border-red-700 w-[50%] sm:w-[33.33%] mx-auto flex flex-col sm:flex-row justify-around place-items-center text-xs text-white font-medium space-y-4"
               >
-                See our portfolio
-              </button>
-              <button
-                class="text-[#0075FF] w-[180px] sm:w-[150px] bg-white h-14 rounded-full rounded-tl-none border border-[#0075FF]"
-              >
-                More info
-              </button>
+                <button
+                  class="w-[180px] sm:w-[150px] bg-[#0075FF] h-14 rounded-full rounded-tl-none"
+                >
+                  See our portfolio
+                </button>
+                <button
+                  class="text-[#0075FF] w-[180px] sm:w-[150px] bg-white h-14 rounded-full rounded-tl-none border border-[#0075FF]"
+                >
+                  More info
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- { Image & svgs } -->
 
-        <!-- <div
+        <div
           class="relative mt-8 container w-full mx-auto min-h-screen flex justify-center items-center border border-red-700"
         >
           <div class="w-[80%] z-50">
@@ -185,16 +190,15 @@
             <img src="/Images/Teal.svg" alt="Purple" />
             <img src="/Images/Orange.svg" alt="Purple" />
           </div>
-         
-        </div> -->
+        </div>
       </section>
 
       <!-- { Slack & more } -->
       <section>
-        <div class="container mx-auto h-[150px] border border-red-700">
+        <div class="container mx-auto h-[150px]">
           <!-- <div class="w-[90%] mx-auto mt-10 flex flex-wrap justify-between"> -->
           <div
-            class="w-[90%] mx-auto mt-10 grid grid-cols-2 sm:grid-cols-4 place-items-center border border-red-700"
+            class="w-[90%] mx-auto mt-10 grid grid-cols-2 gap-10 sm:grid-cols-4 place-items-center"
           >
             <img src="/Images/Garnier.png" alt="garnier" class="w-28 h-14" />
             <img src="/Images/Slack.png" alt="slack" class="w-28 h-14" />
@@ -205,111 +209,90 @@
       </section>
 
       <!-- { 80K buyers } -->
-      <!-- <section>
-       
-
+      <section class="w-full max-h-[250px]">
         <div
-          class="w-full h-[200px] flex flex-wrap justify-normal text-center mx-auto my-10 border border-red-700"
+          class="w-[95%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 place-items-center text-center"
         >
-          <div class="w-[25%] h-full py-4 border border-red-700">
-            <div
-              class="w-[80%] mx-auto place-items-center border border-red-700"
+          <div class="w-[80%] md:w-[100%] sm:w-[200px] place-items-center my-4">
+            <img
+              src="/Images/ourbuyers.svg.svg"
+              alt="happybuyers"
+              class="mx-auto"
+            />
+            <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
+              80K
+            </h4>
+            <p class="text-[#000000] text-lg font-bold leading-7">Our buyers</p>
+            <p
+              class="text-[#00000080] text-xs place-items-center pt-2 w-[60%] mx-auto"
             >
-              <img
-                src="/Images/ourbuyers.svg.svg"
-                alt="happybuyers"
-                class="mx-auto"
-              />
-              <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
-                80K
-              </h4>
-              <p class="text-[#000000] text-lg font-bold leading-7">
-                Our buyers
-              </p>
-              <p
-                class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]"
-              >
-                Follow a hashtag growth total posts, videos and images.
-              </p>
-            </div>
+              Follow a hashtag growth total posts, videos and images.
+            </p>
           </div>
 
-          <div class="w-[25%] h-full py-4 border border-red-700">
-            <div
-              class="w-[80%] mx-auto place-items-center border border-red-700"
+          <div class="w-[80%] md:w-[100%] sm:w-[200px] place-items-center my-4">
+            <img
+              src="/Images/projectcompleted.svg.svg"
+              alt="projectcompleted"
+              class="mx-auto"
+            />
+            <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
+              90K
+            </h4>
+            <p class="text-[#000000] text-xl font-bold leading-7">
+              Project completed
+            </p>
+            <p
+              class="text-[#00000080] text-xs place-items-center pt-2 w-[60%] mx-auto"
             >
-              <img
-                src="/Images/projectcompleted.svg.svg"
-                alt="projectcompleted"
-                class="mx-auto"
-              />
-              <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
-                90K
-              </h4>
-              <p class="text-[#000000] text-xl font-bold leading-7">
-                Project completed
-              </p>
-              <p
-                class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]"
-              >
-                Follow a hashtag growth total posts, videos and images.
-              </p>
-            </div>
+              Follow a hashtag growth total posts, videos and images.
+            </p>
           </div>
 
-          <div class="w-[25%] h-full py-4 border border-red-700">
-            <div
-              class="w-[80%] mx-auto place-items-center border border-red-700"
+          <div class="w-[80%] md:w-[100%] sm:w-[200px] place-items-center my-4">
+            <img
+              src="/Images/happybuyers.svg.svg"
+              alt="happy buyers"
+              class="mx-auto"
+            />
+            <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
+              80%
+            </h4>
+            <p class="text-[#000000] text-lg font-bold leading-7">
+              Happy buyers
+            </p>
+            <p
+              class="text-[#00000080] text-xs place-items-center pt-2 w-[60%] mx-auto"
             >
-              <img
-                src="/Images/happybuyers.svg.svg"
-                alt="happy buyers"
-                class="mx-auto"
-              />
-              <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
-                80%
-              </h4>
-              <p class="text-[#000000] text-lg font-bold leading-7">
-                Happy buyers
-              </p>
-              <p
-                class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]"
-              >
-                Follow a hashtag growth total posts, videos and images.
-              </p>
-            </div>
+              Follow a hashtag growth total posts, videos and images.
+            </p>
           </div>
-          <div class="w-[25%] h-full py-4 border border-red-700">
-            <div
-              class="w-[80%] mx-auto place-items-center border border-red-700"
+
+          <div class="w-[80%] md:w-[100%] sm:w-[200px] place-items-center my-4">
+            <img
+              src="/Images/teammembers.svg.svg"
+              alt="happybuyers"
+              class="mx-auto"
+            />
+            <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
+              50+
+            </h4>
+            <p class="text-[#000000] text-xl font-bold leading-7">
+              Team members
+            </p>
+            <p
+              class="text-[#00000080] text-xs place-items-center pt-2 w-[60%] mx-auto"
             >
-              <img
-                src="/Images/teammembers.svg.svg"
-                alt="happybuyers"
-                class="mx-auto"
-              />
-              <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
-                50+
-              </h4>
-              <p class="text-[#000000] text-xl font-bold leading-7">
-                Team members
-              </p>
-              <p
-                class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]"
-              >
-                Follow a hashtag growth total posts, videos and images.
-              </p>
-            </div>
+              Follow a hashtag growth total posts, videos and images.
+            </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- { Grids } -->
-      <!-- <section>
+      <section>
         <div class="w-full h-[500px] my-auto flex justify-between">
-          <div
-            class="w-[40%] flex-col justify-center items-center border-2 border-purple-700"
-          >
+          <div class="w-[50%] flex-col justify-center items-center">
             <div class="w-[80%] mx-auto my-20 space-y-2">
               <h2 class="text-5xl text-[#000000] font-bold leading-[66px]">
                 We provide that service.
@@ -335,14 +318,15 @@
             </div>
           </div>
 
-          <div
-            class="w-[60%] flex justify-normal bg-[url('/Images/BackgroundImage.png')] bg-custom-bg-size bg-center bg-no-repeat border border-red-700"
-          >
+          <div class="relative w-[50%] flex justify-normal">
             <div
-              class="w-[60%] mx-auto place-items-center grid grid-cols-2 grid-rows-2 gap-10 border border-purple-700"
+              class="absolute left-20 w-[80%] h-full bg-[url('/Images/BackgroundImage.png')]"
+            ></div>
+            <div
+              class="z-50 w-[80%] place-items-center grid grid-cols-2 grid-rows-2 gap-2"
             >
               <div
-                class="w-[180px] h-[220px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
+                class="w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -361,7 +345,7 @@
                 </div>
               </div>
               <div
-                class="w-[180px] h-[220px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
+                class="w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -380,7 +364,7 @@
                 </div>
               </div>
               <div
-                class="w-[180px] h-[220px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
+                class="w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -399,7 +383,7 @@
                 </div>
               </div>
               <div
-                class="w-[180px] h-[220px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
+                class="w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -420,7 +404,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- { Why we best } -->
       <!-- <section>
@@ -807,28 +791,3 @@
 .f-options > p:hover {
   color: slategray;
 } -->
-
-<!-- <div class="w-[25%] h-full py-4">
-  <img src="/Images/teammembers.svg.svg" alt="happybuyers" class="ml-28" />
-  <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">90K</h4>
-  <p class="text-[#000000] text-xl font-bold leading-7">Project completed</p>
-  <p class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]">
-    Follow a hashtag growth total posts, videos and images.
-  </p>
-</div>
-<div class="w-[25%] h-full py-4">
-  <img src="/Images/projectcompleted.svg.svg" alt="happybuyers" class="ml-28" />
-  <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">80%</h4>
-  <p class="text-[#000000] text-xl font-bold leading-7">Happy buyers</p>
-  <p class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]">
-    Follow a hashtag growth total posts, videos and images.
-  </p>
-</div>
-<div class="w-[25%] h-full py-4">
-  <img src="/Images/ourbuyers.svg.svg" alt="happybuyers" class="ml-28" />
-  <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">50+</h4>
-  <p class="text-[#000000] text-xl font-bold leading-7">Team members</p>
-  <p class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]">
-    Follow a hashtag growth total posts, videos and images.
-  </p>
-</div> -->
