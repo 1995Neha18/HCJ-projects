@@ -10,10 +10,10 @@
     <main class="space-y-4">
       <nav class="h-auto">
         <div class="w-[90%] mx-auto my-4 flex justify-between">
-          <div class="w-[15%]">
-            <img src="/Images/logo.png.svg" alt="logo" class="w-full h-8" />
+          <div class="w-[30%] lg:w-[15%]">
+            <img src="/Images/logo.png.svg" alt="logo" class="w-full h-12" />
           </div>
-          <div class="w-[55%] my-auto">
+          <div class="w-[55%] hidden lg:block my-auto">
             <ul
               class="flex justify-around items-center font-sans text-sm font-normal leading-7"
             >
@@ -35,53 +35,139 @@
             </ul>
           </div>
           <div
-            class="w-[30%] flex justify-around text-[#0075FF] font-medium text-center leading-7"
+            class="w-[30%] hidden lg:flex justify-around text-[#0075FF] font-medium text-center leading-7"
           >
             <button>Sign In</button>
             <button class="w-36 h-10 bg-[#DAEBFF] rounded-full rounded-tl-none">
               Sign up
             </button>
           </div>
+          <!-- Hamburger for Small Screens -->
+          <div class="lg:hidden">
+            <button
+              id="mobileMenuButton"
+              class="text-black flex justify-center items-center"
+              onclick="toggleMobileMenu()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!------- Option menu for medium and large screens ------->
+        <div
+          id="md-screen"
+          class="hidden lg:flex md:space-x-8 text-sm text-white"
+        >
+          <a href="#"> Home </a>
+          <a href="#"> Services </a>
+          <a href="#"> About </a>
+          <a href="#"> Projects </a>
+          <a href="#"> Help </a>
+          <a href="#">Sign In</a>
+          <a href="#">Sign Up</a>
         </div>
       </nav>
+      <!------------------- Small screen hamburger menu ----------------->
+      <div
+        id="mobileMenu"
+        class="lg:hidden h-[320px] pl-10 py-4 space-y-4 bg-backgDblue p-4 text-black text-left font-medium text-xl rounded-sm"
+        style="display: none"
+      >
+        <a href="#" class="block my-2">Home</a>
+        <a href="#" class="block my-2">Services</a>
+        <a href="#" class="block my-2">About</a>
+        <a href="#" class="block my-2">Projects</a>
+        <a href="#" class="block my-2">Help</a>
+        <a href="#" class="block my-2">Sign In</a>
+        <a href="#" class="block my-2">Sign Up</a>
+      </div>
+
       <!-- { Banner } -->
       <section class="">
-        <div class="container mx-auto w-full space-y-2 font-sans bg-white">
-          <div
-            class="w-[55%] mx-auto mt-10 text-[#002834] text-center font-medium leading-[50px]"
-          >
-            <h1 class="text-5xl font-bold py-4">
-              Solve problem with an integrated agency.
-            </h1>
+        <div
+          class="relative container mx-auto w-full h-auto md:h-[360px] space-y-2 flex justify-center items-center bg-white"
+        >
+          <!-- { Image & svgs } -->
+          <div>
+            <img
+              src="/Images/lavender.svg"
+              alt="lavender"
+              class="absolute top-0 left-1/2"
+            />
+            <img
+              src="/Images/Oleafsvg.svg"
+              alt="Oleafsvg"
+              class="absolute left-10 top-0"
+            />
+            <img
+              src="/Images/Tleaf.svg"
+              alt="Tleaf"
+              class="absolute right-10 top-0"
+            />
+            <img
+              src="/Images/lavender.svg"
+              alt="lavender"
+              class="absolute top-0 left-1/2"
+            />
           </div>
-          <div
-            class="w-[55%] mx-auto text-center text-[#7D82A1] text-xs font-base leading-6"
-          >
-            <p>
-              Ehya is the Instagram analytics platform teams use to stay focused
-              on the goals, track engagement for report your business .
-            </p>
-          </div>
-          <div
-            class="w-[33.33%] mx-auto flex justify-around text-xs text-white font-medium"
-          >
-            <button
-              class="w-[150px] bg-[#0075FF] h-10 rounded-full rounded-tl-none"
+
+          <div class="w-full my-auto flex flex-col justify-center items-center">
+            <div
+              class="w-[70%] mx-auto text-[#002834] text-center font-medium leading-[50px]"
             >
-              See our portfolio
-            </button>
-            <button
-              class="text-[#0075FF] w-[150px] bg-white h-10 rounded-full rounded-tl-none border border-[#0075FF]"
+              <h1 class="text-5xl font-bold py-4">
+                Solve problem with an integrated agency.
+              </h1>
+            </div>
+            <div
+              class="w-[70%] sm:w-[55%] mx-auto text-center text-[#7D82A1] text-xs font-base leading-6"
             >
-              More info
-            </button>
+              <p>
+                Ehya is the Instagram analytics platform teams use to stay
+                focused on the goals, track engagement for report your business
+                .
+              </p>
+            </div>
+            <div
+              class="w-[50%] sm:w-[33.33%] mx-auto flex flex-col sm:flex-row justify-around text-xs text-white font-medium space-y-4"
+            >
+              <img
+                src="/Images/Pcircle.svg"
+                alt="Pcircle"
+                class="absolute left-0 top-30"
+              />
+              <button
+                class="w-[180px] sm:w-[150px] bg-[#0075FF] h-14 rounded-full rounded-tl-none"
+              >
+                See our portfolio
+              </button>
+              <button
+                class="text-[#0075FF] w-[180px] sm:w-[150px] bg-white h-14 rounded-full rounded-tl-none border border-[#0075FF]"
+              >
+                More info
+              </button>
+            </div>
           </div>
         </div>
 
         <!-- { Image & svgs } -->
 
-        <div
-          class="relative mt-4 container w-full mx-auto min-h-screen flex justify-center items-center border-black border"
+        <!-- <div
+          class="relative mt-8 container w-full mx-auto min-h-screen flex justify-center items-center border border-red-700"
         >
           <div class="w-[80%] z-50">
             <img
@@ -99,19 +185,17 @@
             <img src="/Images/Teal.svg" alt="Purple" />
             <img src="/Images/Orange.svg" alt="Purple" />
           </div>
-          <!-- <div class="w-[120px] h-[40px] absolute bottom-0 left-5">
-            <img src="/Images/Teal.svg" alt="teal-svg" />
-          </div>
-          <div class="w-[120px] h-[40px] absolute bottom-0 right-0">
-            <img src="/Images/Orange.svg" alt="orange-svg" />
-          </div> -->
-        </div>
+         
+        </div> -->
       </section>
 
       <!-- { Slack & more } -->
       <section>
-        <div class="container mx-auto h-[150px]">
-          <div class="w-[90%] mx-auto mt-10 flex justify-between">
+        <div class="container mx-auto h-[150px] border border-red-700">
+          <!-- <div class="w-[90%] mx-auto mt-10 flex flex-wrap justify-between"> -->
+          <div
+            class="w-[90%] mx-auto mt-10 grid grid-cols-2 sm:grid-cols-4 place-items-center border border-red-700"
+          >
             <img src="/Images/Garnier.png" alt="garnier" class="w-28 h-14" />
             <img src="/Images/Slack.png" alt="slack" class="w-28 h-14" />
             <img src="/Images/Udemy.png" alt="udemy" class="w-28 h-14" />
@@ -121,17 +205,20 @@
       </section>
 
       <!-- { 80K buyers } -->
-      <section>
-        <!-- { Growth Total } -->
-        <div class="container mx-auto h-[280px]">
-          <div
-            class="w-[95%] h-auto flex flex-wrap justify-normal text-center mx-auto my-10"
-          >
-            <div class="w-[25%] h-full py-4">
+      <!-- <section>
+       
+
+        <div
+          class="w-full h-[200px] flex flex-wrap justify-normal text-center mx-auto my-10 border border-red-700"
+        >
+          <div class="w-[25%] h-full py-4 border border-red-700">
+            <div
+              class="w-[80%] mx-auto place-items-center border border-red-700"
+            >
               <img
-                src="/Images/happybuyers.svg.svg"
+                src="/Images/ourbuyers.svg.svg"
                 alt="happybuyers"
-                class="ml-28"
+                class="mx-auto"
               />
               <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
                 80K
@@ -145,11 +232,16 @@
                 Follow a hashtag growth total posts, videos and images.
               </p>
             </div>
-            <div class="w-[25%] h-full py-4">
+          </div>
+
+          <div class="w-[25%] h-full py-4 border border-red-700">
+            <div
+              class="w-[80%] mx-auto place-items-center border border-red-700"
+            >
               <img
-                src="/Images/teammembers.svg.svg"
-                alt="happybuyers"
-                class="ml-28"
+                src="/Images/projectcompleted.svg.svg"
+                alt="projectcompleted"
+                class="mx-auto"
               />
               <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
                 90K
@@ -163,16 +255,21 @@
                 Follow a hashtag growth total posts, videos and images.
               </p>
             </div>
-            <div class="w-[25%] h-full py-4">
+          </div>
+
+          <div class="w-[25%] h-full py-4 border border-red-700">
+            <div
+              class="w-[80%] mx-auto place-items-center border border-red-700"
+            >
               <img
-                src="/Images/projectcompleted.svg.svg"
-                alt="happybuyers"
-                class="ml-28"
+                src="/Images/happybuyers.svg.svg"
+                alt="happy buyers"
+                class="mx-auto"
               />
               <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
                 80%
               </h4>
-              <p class="text-[#000000] text-xl font-bold leading-7">
+              <p class="text-[#000000] text-lg font-bold leading-7">
                 Happy buyers
               </p>
               <p
@@ -181,11 +278,15 @@
                 Follow a hashtag growth total posts, videos and images.
               </p>
             </div>
-            <div class="w-[25%] h-full py-4">
+          </div>
+          <div class="w-[25%] h-full py-4 border border-red-700">
+            <div
+              class="w-[80%] mx-auto place-items-center border border-red-700"
+            >
               <img
-                src="/Images/ourbuyers.svg.svg"
+                src="/Images/teammembers.svg.svg"
                 alt="happybuyers"
-                class="ml-28"
+                class="mx-auto"
               />
               <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">
                 50+
@@ -201,10 +302,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- { Grids } -->
-      <section>
+      <!-- <section>
         <div class="w-full h-[500px] my-auto flex justify-between">
           <div
             class="w-[40%] flex-col justify-center items-center border-2 border-purple-700"
@@ -234,12 +335,14 @@
             </div>
           </div>
 
-          <div class="w-[60%] flex justify-normal border border-red-700">
+          <div
+            class="w-[60%] flex justify-normal bg-[url('/Images/BackgroundImage.png')] bg-custom-bg-size bg-center bg-no-repeat border border-red-700"
+          >
             <div
-              class="w-full grid grid-cols-2 grid-rows-2 gap-10 border border-purple-700"
+              class="w-[60%] mx-auto place-items-center grid grid-cols-2 grid-rows-2 gap-10 border border-purple-700"
             >
               <div
-                class="w-[140px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-6 shadow-lg"
+                class="w-[180px] h-[220px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -258,7 +361,7 @@
                 </div>
               </div>
               <div
-                class="py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-6 shadow-lg"
+                class="w-[180px] h-[220px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -277,7 +380,7 @@
                 </div>
               </div>
               <div
-                class="w-[140px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-6 shadow-lg"
+                class="w-[180px] h-[220px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -296,7 +399,7 @@
                 </div>
               </div>
               <div
-                class="w-[140px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-6 shadow-lg"
+                class="w-[180px] h-[220px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -317,10 +420,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- { Why we best } -->
-      <section>
+      <!-- <section>
         <div class="w-full border border-red-700">
           <div class="w-[95%] h-[80%] mx-auto my-8 flex justify-between">
             <div class="w-1/2">
@@ -392,10 +495,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- { Network & details } -->
-      <section>
+      <!-- <section>
         <div class="bg-[#e2f3f9] space-y-4">
           <div class="w-[95%] m-auto">
             <h2
@@ -492,10 +595,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- { Clients about us } -->
-      <section class="">
+      <!-- <section class="">
         <div class="w-[95%] mx-auto my-10 space-y-2">
           <div class="w-[95%] m-auto mt-16">
             <h2
@@ -535,7 +638,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- { Sign Up } -->
 
@@ -544,7 +647,7 @@
           class="bg-black max-h-[800px] mt-10 flex flex-col justify-center"
         >
           <!-- { Sign Up } -->
-          <div
+          <!-- <div
             class="w-[95%] mx-auto z-50 -mt-40 bg-[#0075ff] h-[240px] rounded-lg flex justify-center"
           >
             <div class="w-1/2 mt-10">
@@ -577,9 +680,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- --------------------- -->
-          <div class="w-[90%] mx-auto mt-20 flex justify-between">
+          <!-- <div class="w-[90%] mx-auto mt-20 flex justify-between">
             <div class="w-[25%] space-y-2">
               <img
                 src="/Images/logo.png.svg"
@@ -675,10 +778,17 @@
             <p class="text-xs font-normal text-[#FFFFFFBF] leading-[20px]">
               Privacy Policy &nbsp; <span>I</span> &nbsp; Terms & Conditions
             </p>
-          </div>
+          </div> -->
         </footer>
       </section>
     </main>
+
+    <script>
+      function toggleMobileMenu() {
+        let x = document.getElementById("mobileMenu");
+        x.style.display = x.style.display === "block" ? "none" : "block";
+      }
+    </script>
   </body>
 </html>
 
@@ -697,3 +807,28 @@
 .f-options > p:hover {
   color: slategray;
 } -->
+
+<!-- <div class="w-[25%] h-full py-4">
+  <img src="/Images/teammembers.svg.svg" alt="happybuyers" class="ml-28" />
+  <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">90K</h4>
+  <p class="text-[#000000] text-xl font-bold leading-7">Project completed</p>
+  <p class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]">
+    Follow a hashtag growth total posts, videos and images.
+  </p>
+</div>
+<div class="w-[25%] h-full py-4">
+  <img src="/Images/projectcompleted.svg.svg" alt="happybuyers" class="ml-28" />
+  <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">80%</h4>
+  <p class="text-[#000000] text-xl font-bold leading-7">Happy buyers</p>
+  <p class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]">
+    Follow a hashtag growth total posts, videos and images.
+  </p>
+</div>
+<div class="w-[25%] h-full py-4">
+  <img src="/Images/ourbuyers.svg.svg" alt="happybuyers" class="ml-28" />
+  <h4 class="text-[#000000] text-3xl font-bold leading-[60px]">50+</h4>
+  <p class="text-[#000000] text-xl font-bold leading-7">Team members</p>
+  <p class="text-[#00000080] text-xs place-items-center mt-2 ml-10 w-[150px]">
+    Follow a hashtag growth total posts, videos and images.
+  </p>
+</div> -->
