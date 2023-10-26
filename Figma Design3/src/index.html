@@ -143,16 +143,14 @@
               </p>
             </div>
 
-            <div
-              class="relative overflow-hidden w-full border-2 border-purple-700"
-            >
+            <div class="relative overflow-hidden w-full">
               <img
                 src="/Images/Pcircle.svg"
                 alt="Pcircle"
                 class="absolute left-2 -bottom-10"
               />
               <div
-                class="border border-red-700 w-[50%] sm:w-[33.33%] mx-auto flex flex-col sm:flex-row justify-around place-items-center text-xs text-white font-medium space-y-4"
+                class="w-[50%] sm:w-[33.33%] mx-auto flex flex-col sm:flex-row justify-around place-items-center text-xs text-white font-medium space-y-4"
               >
                 <button
                   class="w-[180px] sm:w-[150px] bg-[#0075FF] h-14 rounded-full rounded-tl-none"
@@ -171,7 +169,7 @@
 
         <!-- { Image & svgs } -->
 
-        <div
+        <!-- <div
           class="relative mt-8 container w-full mx-auto min-h-screen flex justify-center items-center border border-red-700"
         >
           <div class="w-[80%] z-50">
@@ -190,7 +188,7 @@
             <img src="/Images/Teal.svg" alt="Purple" />
             <img src="/Images/Orange.svg" alt="Purple" />
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!-- { Slack & more } -->
@@ -209,9 +207,9 @@
       </section>
 
       <!-- { 80K buyers } -->
-      <section class="w-full max-h-[250px]">
+      <!-- <section class="w-full max-h-[250px] border border-red-800">
         <div
-          class="w-[95%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 place-items-center text-center"
+          class="border border-red-800 w-[95%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 place-items-center text-center"
         >
           <div class="w-[80%] md:w-[100%] sm:w-[200px] place-items-center my-4">
             <img
@@ -287,18 +285,24 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- { Grids } -->
       <section>
-        <div class="w-full h-[500px] my-auto flex justify-between">
-          <div class="w-[50%] flex-col justify-center items-center">
-            <div class="w-[80%] mx-auto my-20 space-y-2">
+        <div
+          class="w-full h-auto lg:h-[550px] flex flex-col lg:flex-row justify-between border-2 border-green-800"
+        >
+          <div
+            class="w-full lg:w-[50%] flex flex-col justify-center items-center border border-red-800"
+          >
+            <div
+              class="w-full lg:w-[80%] flex flex-col justify-center place-items-center text-center space-y-2 border-2 border-purple-800"
+            >
               <h2 class="text-5xl text-[#000000] font-bold leading-[66px]">
                 We provide that service.
               </h2>
               <p
-                class="text-sm text-[#7D82A1] font-medium leading-[25px] max-w-[280px]"
+                class="text-sm text-[#7D82A1] font-medium leading-[25px] w-[80%] lg:max-w-[280px]"
               >
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -318,15 +322,17 @@
             </div>
           </div>
 
-          <div class="relative w-[50%] flex justify-normal">
+          <div
+            class="relative w-full lg:w-[50%] flex justify-normal border border-red-800"
+          >
             <div
-              class="absolute left-20 w-[80%] h-full bg-[url('/Images/BackgroundImage.png')]"
+              class="absolute left-0 lg:left-20 w-full lg:w-[80%] h-full bg-[url('/Images/BackgroundImage.png')] rounded-xl"
             ></div>
             <div
-              class="z-50 w-[80%] place-items-center grid grid-cols-2 grid-rows-2 gap-2"
+              class="z-50 w-full lg:w-[80%] place-items-center grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-2 py-4 space-y-6"
             >
               <div
-                class="w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
+                class="w-[80%] md:w-[280px] lg:w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -338,14 +344,14 @@
                     Marketing
                   </h4>
                   <p
-                    class="text-[#7D82A1] text-xs font-medium leading-[20px] w-[80px]"
+                    class="text-[#7D82A1] text-xs font-medium leading-[20px] w-[60%] lg:w-[80px]"
                   >
                     Follow a hashtag total posts, videos
                   </p>
                 </div>
               </div>
               <div
-                class="w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
+                class="w-[80%] md:w-[280px] lg:w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -357,14 +363,14 @@
                     Graphic design
                   </h4>
                   <p
-                    class="text-[#7D82A1] text-xs font-medium leading-[20px] w-[80px]"
+                    class="text-[#7D82A1] text-xs font-medium leading-[20px] w-[60%] lg:w-[80px]"
                   >
                     Follow a hashtag total posts, videos
                   </p>
                 </div>
               </div>
               <div
-                class="w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
+                class="w-[80%] md:w-[280px] lg:w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -376,14 +382,14 @@
                     Heaking
                   </h4>
                   <p
-                    class="text-[#7D82A1] text-xs font-medium leading-[20px] w-[80px]"
+                    class="text-[#7D82A1] text-xs font-medium leading-[20px] w-[60%] lg:w-[80px]"
                   >
                     Follow a hashtag total posts, videos
                   </p>
                 </div>
               </div>
               <div
-                class="w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
+                class="w-[80%] md:w-[280px] lg:w-[180px] h-[200px] py-4 bg-white rounded-2xl flex flex-col justify-center items-start space-y-8 shadow-lg"
               >
                 <div class="w-[90%] ml-4 h-full">
                   <img
@@ -395,7 +401,7 @@
                     UI/UX Design
                   </h4>
                   <p
-                    class="text-[#7D82A1] text-xs font-medium leading-[20px] w-[80px]"
+                    class="text-[#7D82A1] text-xs font-medium leading-[20px] w-[60%] lg:w-[80px]"
                   >
                     Follow a hashtag total posts, videos
                   </p>
@@ -407,27 +413,31 @@
       </section>
 
       <!-- { Why we best } -->
-      <!-- <section>
-        <div class="w-full border border-red-700">
-          <div class="w-[95%] h-[80%] mx-auto my-8 flex justify-between">
-            <div class="w-1/2">
+      <section>
+        <div class="w-full">
+          <div
+            class="w-[95%] h-[80%] mx-auto my-8 flex flex-col lg:flex-row justify-between space-y-2"
+          >
+            <div class="w-full lg:w-1/2">
               <img
                 src="/images/System.png"
                 alt="System"
                 class="w-full h-full"
               />
             </div>
-            <div class="w-1/2 flex flex-col">
-              <div class="w-[80%] mx-auto h-auto space-y-2">
-                <h3 class="text-3xl font-bold leading-[48px]">Why we best?</h3>
+            <div class="w-full lg:w-1/2 flex flex-col">
+              <div class="w-full lg:w-[80%] mx-auto h-auto space-y-2">
+                <h3 class="text-3xl font-bold leading-[48px] text-center">
+                  Why we best?
+                </h3>
                 <p
-                  class="text-[#8EA9C1] font-medium text-xs leading-4 w-[350px]"
+                  class="text-[#8EA9C1] font-medium text-xs text-center leading-4 w-full md:w-[80%] lg:w-[370px]"
                 >
                   Dont waste time on search manual tasks. Let Automation do it
                   for you. Simplify workflows, reduce errors, and save time.
                 </p>
 
-                <div class="w-[60%] h-auto flex justify-normal">
+                <div class="w-full lg:w-[60%] h-auto flex justify-normal">
                   <button class="bg-[#d2f4e3] rounded-full w-10 max-h-20">
                     <img
                       src="/images/check.svg.png"
@@ -443,7 +453,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="w-[60%] h-auto flex justify-normal">
+                <div class="w-full lg:w-[60%] h-auto flex justify-normal">
                   <button class="bg-[#d2f4e3] rounded-full w-10 max-h-20">
                     <img
                       src="/images/check.svg.png"
@@ -459,7 +469,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="w-[60%] h-auto flex justify-normal">
+                <div class="w-full lg:w-[60%] h-auto flex justify-normal">
                   <button class="bg-[#d2f4e3] rounded-full w-10 max-h-20">
                     <img
                       src="/images/check.svg.png"
@@ -479,7 +489,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- { Network & details } -->
       <!-- <section>
