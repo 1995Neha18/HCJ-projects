@@ -6,3 +6,10 @@ console.log(str);
 // Different way of wriring console.log
 
 console.log`Hello World`;
+// Note: console.log is a function and we can pass any value inside it.
+// So using backticjs instead of brackets we can also use console.log which gives an array of strings as output.
+
+const str1 = "Neha";
+console.log`Hello World ${str1} how are ${"you"}?`;
+// Note: Here we can pass any value inside the console.log and it will give an array of strings as output when using backticks 
+// & the values inside the template literal will be written as a seperate variable.
