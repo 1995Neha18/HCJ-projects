@@ -43,5 +43,9 @@ console.log(str2.replace("morning", "evening"));
 console.log(str2.toUpperCase());
 console.log(str2.toLowerCase());
 
+// 7. Concatenating the string.
+const newStr = str2.concat("Javascript");
+console.log(newStr);
+
 
 
