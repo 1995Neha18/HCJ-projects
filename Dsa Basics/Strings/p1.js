@@ -47,5 +47,10 @@ console.log(str2.toLowerCase());
 const newStr = str2.concat("Javascript");
 console.log(newStr);
 
+// 8. Converting an object into string.
+const obj1 = {name:"Neha", age:28}
+// console.log(String(obj1));
+console.log(JSON.stringify(obj1));
+
 
 
