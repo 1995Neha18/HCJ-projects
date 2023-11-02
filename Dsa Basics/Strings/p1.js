@@ -34,7 +34,7 @@ console.log(str3.startsWith("a"));
 //4. Extracting the string parts.
 console.log(str2.substring(10));
 console.log(str2.substring(0, 4));
-console.log(str2.slice(0,4));
+console.log(str2.slice(0, 4));
 
 // 5. Replacing the string content.
 console.log(str2.replace("morning", "evening"));
@@ -48,9 +48,14 @@ const newStr = str2.concat("Javascript");
 console.log(newStr);
 
 // 8. Converting an object into string.
-const obj1 = {name:"Neha", age:28}
+const obj1 = { name: "Neha", age: 28 };
+
 // console.log(String(obj1));
 console.log(JSON.stringify(obj1));
 
-
-
+// 9. Converting a string(in json format) into an array.
+const str4 = "Welcome to Javascript";
+console.log(str4.split(""));
+const str5 = '["Css","Html","Javascript","React","Nodejs"]';
+const array = JSON.parse(str5);
+console.log(array);
