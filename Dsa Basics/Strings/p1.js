@@ -17,6 +17,14 @@ console.log`Hello World ${str1} how are ${"you"}?`;
 // 1. Finding the length of the string.
 const str2 = "Goodmorning";
 console.log(str2.length);
+
 // 2. Accessing the character of the string.
 console.log(str2[3]);
 console.log(str2.charAt(5));
+console.log(str2.charAt(6));
+
+// 3. Finding the index of the character.
+console.log(str2.indexOf("n"));
+console.log(str2.indexOf("Goodmorning"));
+
+
