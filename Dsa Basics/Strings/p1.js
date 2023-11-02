@@ -16,6 +16,7 @@ console.log`Hello World ${str1} how are ${"you"}?`;
 
 // 1. Finding the length of the string.
 const str2 = "Goodmorning";
+const str3 = "Good afternoon neha";
 console.log(str2.length);
 
 // 2. Accessing the character of the string.
@@ -25,6 +26,10 @@ console.log(str2.charAt(6));
 
 // 3. Finding the index of the character.
 console.log(str2.indexOf("n"));
-console.log(str2.indexOf("Goodmorning"));
+console.log(str2.lastIndexOf("o"));
+console.log(str3.lastIndexOf("a"));
+console.log(str3.lastIndexOf("e"));
+console.log(str3.startsWith("a"));
+
 
 
