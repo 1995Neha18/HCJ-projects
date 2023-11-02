@@ -24,12 +24,24 @@ console.log(str2[3]);
 console.log(str2.charAt(5));
 console.log(str2.charAt(6));
 
-// 3. Finding the index of the character.
+// 3. Finding the index of the character or searching characters.
 console.log(str2.indexOf("n"));
 console.log(str2.lastIndexOf("o"));
 console.log(str3.lastIndexOf("a"));
 console.log(str3.lastIndexOf("e"));
 console.log(str3.startsWith("a"));
+
+//4. Extracting the string parts.
+console.log(str2.substring(10));
+console.log(str2.substring(0, 4));
+console.log(str2.slice(0,4));
+
+// 5. Replacing the string content.
+console.log(str2.replace("morning", "evening"));
+
+// 6. Converting to upper case and lower case.
+console.log(str2.toUpperCase());
+console.log(str2.toLowerCase());
 
 
 
