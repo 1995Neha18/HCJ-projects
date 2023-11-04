@@ -89,7 +89,25 @@ console.log(truncate("Javascript Learning", 10));
 // }
 // console.log(isPalindrome(121));
 
-// Palindrome string -
+// Approach - 1 (T.C - O(n))
+
+function isPalindrome(str) {
+  let ans = "Yes";
+  let i = 0;
+  let j = str.length - 1;
+  while (i < j) {
+    if (str[i] !== str[j]) {
+      ans = "No";
+      break;
+    }
+    i++;
+    j--;
+  }
+  return ans;
+}
+console.log(isPalindrome("naman"));
+
+// Palindrome string - (T.C - O(n/2))
 
 function isPalindrome(str) {
   let ans = "Yes";
@@ -101,5 +119,13 @@ function isPalindrome(str) {
   }
   return ans;
 }
-
 console.log(isPalindrome("naman"));
+
+// 3. Write a function that takes a string as input and returns the string reversed.
+// input: "Hello World";
+// output: "dlroW olleH"
+
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
+// console.log(reverseString("Hello World"));
