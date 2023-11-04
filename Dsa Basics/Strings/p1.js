@@ -59,3 +59,25 @@ console.log(str4.split(""));
 const str5 = '["Css","Html","Javascript","React","Nodejs"]';
 const array = JSON.parse(str5);
 console.log(array);
+
+                 // { DSA Questions based on Strings }
+
+// 1. Write a function called the truncate that checks the length of a given string, and if it surpasses a specified max length,it replaces the end of the string with the ellipsis character "...", So that the length matches the maximum length.
+// input: 
+// str = "Javascript Learning";
+// maxLength = 10; 
+// output: "Javascript..."
+
+ function truncate(str, maxlength){
+
+    if(str.length > maxlength){
+        return str.slice(0,maxlength) + "...";
+    }
+    else return str;
+    
+   }
+   console.log(truncate("Javascript Learning", 10));
+
+
+
+
