@@ -79,11 +79,27 @@ console.log(truncate("Javascript Learning", 10));
 // input: x = 121; output: true
 // input: x = 10; output: false
 
-function isPalindrome(x) {
-  if (x < 0) {
-    return false;
-  } else {
-    return x === +x.toString().split("").reverse().join("");
+// Palindrome number -
+// function isPalindrome(x) {
+//   if (x < 0) {
+//     return false;
+//   } else {
+//     return x === +x.toString().split("").reverse().join("");
+//   }
+// }
+// console.log(isPalindrome(121));
+
+// Palindrome string -
+
+function isPalindrome(str) {
+  let ans = "Yes";
+  for (let i = 0; i < str.length / 2; i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      ans = "No";
+      break;
+    }
   }
+  return ans;
 }
-console.log(isPalindrome(121));
+
+console.log(isPalindrome("naman"));
