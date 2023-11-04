@@ -129,3 +129,17 @@ console.log(isPalindrome("naman"));
 //   return str.split("").reverse().join("");
 // }
 // console.log(reverseString("Hello World"));
+
+let s1 = "naman";
+let ans = "Yes";
+let i = 0;
+let j = s1.length - 1;
+while (i < j) {
+  if (s1[i] !== s1[j]) {
+    ans = "No";
+    break;
+  }
+  i++;
+  j--;
+}
+console.log(ans);
