@@ -1,20 +1,26 @@
-import React from "react";
-const svg = "../Images/logo.png.svg";
+import React, { useState } from "react";
+
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <>
       <nav>
-        <div class="flex flex-col justify-center items-center">
-          <div class="container mx-auto my-4 flex justify-between">
-            <div class="w-[30%] md:w-[20%] h-12 cursor-pointer">
+        <div className="flex flex-col justify-center items-center">
+          <div className="container mx-auto my-4 flex justify-between">
+            <div className="w-[30%] md:w-[20%] h-12 cursor-pointer">
               <img
-                src="../Images/logo.png.svg"
+                src={process.env.PUBLIC_URL + '/Images/logo.png.png'}
                 alt="logo"
-                class="w-full h-full"
+                
               />
             </div>
-            <div class="hidden w-[40%] lg:flex justify-center items-center">
-              <ul class="flex space-x-10 text-[14px] font-normal">
+            <div className="hidden w-[40%] lg:flex justify-center items-center">
+              <ul className="flex space-x-10 text-[14px] font-normal">
                 <li>
                   <a href="https://">Home</a>
                 </li>
@@ -32,30 +38,31 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <div class="hidden lg:block w-[33%]">
-              <button class="w-40 h-12 text-[#0075FF]">Sign In</button>
-              <button class="w-40 h-12 text-[#0075FF] bg-[#daebff] rounded-full rounded-tl-none">
+            <div className="hidden lg:block w-[33%]">
+              <button className="w-40 h-12 text-[#0075FF]">Sign In</button>
+              <button className="w-40 h-12 text-[#0075FF] bg-[#daebff] rounded-full rounded-tl-none">
                 Sign Up
               </button>
             </div>
 
+            {/* Hamburger icon */}
             <div
-              class="lg:hidden text-black text-md"
+              className="lg:hidden text-black text-md"
               id="mobileMenuButton"
-              onclick="toggleMobileMenu()"
+              onClick={toggleMobileMenu}
             >
               <button>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8"
+                  className="h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M4 6h16M4 12h16M4 18h16"
                   />
                 </svg>
@@ -63,19 +70,54 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
+        {/* Option menu for medium and small screens */}
         <div
           id="md-screen"
-          class="hidden lg:flex md:space-x-8 text-sm text-white"
+          className="hidden lg:flex md:space-x-8 text-sm text-white"
         >
-          <a href="#"> Home </a>
-          <a href="#"> Services </a>
-          <a href="#"> About </a>
-          <a href="#"> Projects </a>
-          <a href="#"> Help </a>
-          <a href="#">Sign In</a>
-          <a href="#">Sign Up</a>
+          <a href="https://"> Home </a>
+          <a href="https://"> Services </a>
+          <a href="https://"> About </a>
+          <a href="https://"> Projects </a>
+          <a href="https://"> Help </a>
+          <a href="https://">Sign In</a>
+          <a href="https://">Sign Up</a>
         </div>
       </nav>
+
+      {/* Hamburger option menu for small & mediuem screen */}
+      {isMobileMenuOpen && (
+      <div
+        id="mobileMenu"
+        className="lg:hidden h-[320px] pl-10 py-4 bg-backgDblue text-black text-left font-medium text-xl rounded-sm"
+        
+      >
+        <ul className="space-y-4">
+          <li>
+            <a href="https://">Home</a>
+          </li>
+          <li>
+            <a href="https://">Services</a>
+          </li>
+          <li>
+            <a href="https://">About</a>
+          </li>
+          <li>
+            <a href="https://">Project</a>
+          </li>
+          <li>
+            <a href="https://">Help</a>
+          </li>
+          <li>
+            <a href="https://">Sign In</a>
+          </li>
+          <li>
+            <a href="https://">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      )}
     </>
   );
 };
