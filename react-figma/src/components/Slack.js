@@ -1,23 +1,21 @@
-import React from 'react'
+import React from "react";
 
 const Slack = () => {
   const cardImage = [
-    {
-     
-    }
-  ]
+    { img1: "/images/Garnier.png" },
+    { img1: "/images/Slack.png" },
+    { img1: "/images/Udemy.png" },
+    { img1: "/images/Google.png" },
+  ];
   return (
     <>
-       <div
-          class="container mx-auto h-[200px] place-items-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4"
-        >
-          <img src="/Images/Garnier.png" alt="Garnier" class="cursor-pointer" />
-          <img src="/Images/Slack.png" alt="Slack" class="cursor-pointer" />
-          <img src="/Images/Udemy.png" alt="Udemy" class="cursor-pointer" />
-          <img src="/Images/Google.png" alt="Google" class="cursor-pointer" />
-        </div>
+      <div class="container mx-auto h-[200px] place-items-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
+        {cardImage.map((item, index) => (
+          <img key={index} src={process.env.PUBLIC_URL + item.img1} alt={index} />
+        ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Slack
+export default Slack;
