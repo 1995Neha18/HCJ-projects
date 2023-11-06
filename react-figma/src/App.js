@@ -3,15 +3,18 @@ import Clients from './components/Clients'
 import Banner from './components/Banner'
 import Slack from './components/Slack'
 import Buyers from './components/Buyers'
+import Grid from './components/Grid'
+import Quality from './components/Quality'
 
 const App = () => {
   return (
     <div>
-     <Banner
-     />
+     <Banner/>
      <Slack/>
      <Buyers/>
-      <Clients/>
+     <Grid/>
+     <Quality/>
+     <Clients/>
     </div>
   )
 }

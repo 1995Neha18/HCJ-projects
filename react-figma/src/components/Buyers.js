@@ -32,7 +32,7 @@ const Buyers = () => {
     <>
       <div className="container mx-auto space-y-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center">
         {details.map((buyer, index) => (
-          <div className="w-[95%] lg:w-[240px] flex flex-col justify-center items-center cursor-pointer">
+          <div key={index} className="w-[95%] lg:w-[240px] flex flex-col justify-center items-center cursor-pointer">
             <img src={buyer.img} alt={index} className="mx-auto" />
             <h4 className="text-[#000000] text-3xl font-bold leading-[60px]">
               {buyer.title}
