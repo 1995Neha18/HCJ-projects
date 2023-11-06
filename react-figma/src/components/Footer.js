@@ -11,7 +11,7 @@ const Footer = () => {
             className="w-full md:w-[95%] lg:w-full xl:w-[95%] mx-auto z-50 -mt-5 md:-mt-10 lg:-mt-40 bg-[#0075ff] h-auto md:h-[240px] rounded-2xl flex justify-center"
           >
             <div className="hidden lg:block w-1/2 mt-10">
-              <img src="/Images/blue.png" alt="signup" className="w-full h-full" />
+              <img src="/images/blue.png" alt="signup" className="w-full h-full" />
             </div>
             <div className="w-full lg:w-1/2">
               <div className="w-[80%] mx-auto my-8 space-y-2">
@@ -32,7 +32,7 @@ const Footer = () => {
                   />
                   <button className="bg-[#00276F] w-10 h-10">
                     <img
-                      src="/Images/plane.svg.svg"
+                      src="/images/plane.svg.svg"
                       alt="plane"
                       className="w-4 h-4 m-auto"
                     />
@@ -47,7 +47,7 @@ const Footer = () => {
           >
             <div className="w-[80%] md:w-[50%] lg:w-[20%] space-y-4">
               <img
-                src="/Images/logo.svg.svg"
+                src="/images/logo.svg.svg"
                 alt="footer-logo"
                 className="w-[220px] cursor-pointer"
               />
@@ -58,7 +58,7 @@ const Footer = () => {
                   className="w-10 h-10 rounded-full bg-[#404259] hover:scale-110"
                 >
                   <img
-                    src="/Images/facebook.svg.svg"
+                    src="/images/facebook.svg.svg"
                     alt="facebook"
                     className="mx-auto"
                   />
@@ -67,7 +67,7 @@ const Footer = () => {
                   className="w-10 h-10 rounded-full bg-[#404259] hover:scale-110"
                 >
                   <img
-                    src="/Images/twitter.svg.svg"
+                    src="/images/twitter.svg.svg"
                     alt="twitter"
                     className="mx-auto"
                   />
@@ -76,7 +76,7 @@ const Footer = () => {
                   className="w-10 h-10 rounded-full bg-[#404259] hover:scale-110"
                 >
                   <img
-                    src="/Images/instagram.svg.svg"
+                    src="/images/instagram.svg.svg"
                     alt="instagram"
                     className="mx-auto"
                   />
@@ -107,7 +107,7 @@ const Footer = () => {
 
               <div className="f-options cursor-pointer space-y-6 mt-4 sm:mt-0">
                 <div className="flex justify-between text-center">
-                  <img src="/Images/nav.svg" alt="navigation" className="w-6 h-6" />
+                  <img src="/images/nav.svg" alt="navigation" className="w-6 h-6" />
                   <p
                     className="text-xs font-normal text-[#FFFFFFBF] leading-[20px] px-2"
                   >
@@ -115,7 +115,7 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="flex justify-normal text-center">
-                  <img src="/Images/tele.svg" alt="Phone" className="w-6 h-6" />
+                  <img src="/images/tele.svg" alt="Phone" className="w-6 h-6" />
                   <p
                     className="text-xs font-normal text-[#FFFFFFBF] leading-[20px] px-2"
                   >
@@ -123,7 +123,7 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="flex justify-normal text-center">
-                  <img src="/Images/mail.svg" alt="email" className="w-5 h-5" />
+                  <img src="/images/mail.svg" alt="email" className="w-5 h-5" />
 
                   <p
                     className="text-xs font-normal text-[#FFFFFFBF] leading-[20px] px-2"
