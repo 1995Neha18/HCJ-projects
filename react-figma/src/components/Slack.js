@@ -11,7 +11,7 @@ const Slack = () => {
     <>
       <div class="container mx-auto h-[200px] place-items-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
         {cardImage.map((item, index) => (
-          <img key={index} src={process.env.PUBLIC_URL + item.img1} alt={index} />
+          <img key={index} src={item.img1} alt={index} />
         ))}
       </div>
     </>

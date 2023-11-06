@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className="container mx-auto my-4 flex justify-between">
             <div className="w-[30%] md:w-[20%] h-12 cursor-pointer">
               <img
-                src={process.env.PUBLIC_URL + '/images/logo.png.png'}
+                src={'/images/logo.png.png'}
                 alt="logo"
                 
               />

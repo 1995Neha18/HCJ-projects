@@ -2,6 +2,7 @@ import React from 'react'
 import Clients from './components/Clients'
 import Banner from './components/Banner'
 import Slack from './components/Slack'
+import Buyers from './components/Buyers'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
      <Banner
      />
      <Slack/>
+     <Buyers/>
       <Clients/>
     </div>
   )
