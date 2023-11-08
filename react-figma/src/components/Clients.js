@@ -8,12 +8,15 @@ const Clients = () => {
           <h2 className="text-4xl text-center font-bold leading-[60px] w-full lg:w-[70%] mx-auto">
             What say clients about us.
           </h2>
-          <p className="text-xs text-[#90A3B4] text-center font-medium leading-[22px] w-[66%] md:w-[60%] lg:w-[40%] mx-auto">
+          <p className="text-sm text-[#90A3B4] text-center font-medium leading-[22px] w-[66%] md:w-[60%] lg:w-[40%] mx-auto">
             Event madness gathering innoies,& tech enthusiasts in Speced. do
             more informations.
           </p>
         </div>
-        <div className="w-full mx-auto h-auto lg:h-[800px] flex justify-center items-center">
+        <div
+          className="w-full mx-auto h-auto lg:h-[800px] flex justify-center items-center"
+          style={{ backgroundImage: "url('/images/bgimage.png')" }}
+        >
           <div className="w-[420px] flex flex-col justify-center items-center space-y-1 my-4">
             <div className="">
               <img
@@ -22,7 +25,7 @@ const Clients = () => {
                 className="w-full h-full cursor-pointer"
               />
             </div>
-            <p className="w-[80%] text-xs text-center text-[#90A3B4] font-normal leading-[20px]">
+            <p className="w-[80%] text-sm text-center text-[#90A3B4] font-normal leading-[20px]">
               Build your financial literacy within a transparent community.
               Follow other investors, share people from different professional
               backgrounds, and never be alone.

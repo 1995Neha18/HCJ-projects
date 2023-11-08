@@ -88,7 +88,7 @@ const Footer = () => {
               className="w-full lg:w-[75%] flex flex-wrap justify-between items-center"
             >
               <div
-                className="f-options w-[30%] md:w-[20%] lg:w-[15%] space-y-2 cursor-pointer text-left text-[#FFFFFFBF] text-xs font-normal leading-[20px]"
+                className="f-options w-[30%] md:w-[20%] lg:w-[15%] space-y-2 cursor-pointer text-left text-[#FFFFFFBF] text-sm font-normal leading-[20px]"
               >
                 <p>Home</p>
                 <p>Popular</p>
@@ -97,7 +97,7 @@ const Footer = () => {
               </div>
 
               <div
-                className="f-options md:w-[20%] lg:w-[15%] space-y-2 cursor-pointer text-left text-[#FFFFFFBF] text-xs font-normal leading-[20px]"
+                className="f-options md:w-[20%] lg:w-[15%] space-y-2 cursor-pointer text-left text-[#FFFFFFBF] text-sm font-normal leading-[20px]"
               >
                 <p>Help</p>
                 <p>Resources</p>
@@ -109,7 +109,7 @@ const Footer = () => {
                 <div className="flex justify-between text-center">
                   <img src="/images/nav.svg" alt="navigation" className="w-6 h-6" />
                   <p
-                    className="text-xs font-normal text-[#FFFFFFBF] leading-[20px] px-2"
+                    className="text-sm font-normal text-[#FFFFFFBF] leading-[20px] px-2"
                   >
                     925 Filbert Street Pennsylvania 18072
                   </p>
@@ -117,7 +117,7 @@ const Footer = () => {
                 <div className="flex justify-normal text-center">
                   <img src="/images/tele.svg" alt="Phone" className="w-6 h-6" />
                   <p
-                    className="text-xs font-normal text-[#FFFFFFBF] leading-[20px] px-2"
+                    className="text-sm font-normal text-[#FFFFFFBF] leading-[20px] px-2"
                   >
                     925 Filbert Street Pennsylvania 18072
                   </p>
@@ -126,7 +126,7 @@ const Footer = () => {
                   <img src="/images/mail.svg" alt="email" className="w-5 h-5" />
 
                   <p
-                    className="text-xs font-normal text-[#FFFFFFBF] leading-[20px] px-2"
+                    className="text-sm font-normal text-[#FFFFFFBF] leading-[20px] px-2"
                   >
                     925 Filbert Street Pennsylvania 18072
                   </p>

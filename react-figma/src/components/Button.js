@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
 
-const Button = () => {
+const Button = ({
+  backgroundColor = "#0075ff",
+  textColor = "white",
+  text,
+  isRounded = "rounded-full rounded-tl-none",
+  width = "w-full md:w-[204px]",
+  isOutlined,
+}) => {
   return (
-    <div> <button className="w-40 h-12 text-[#0075FF] bg-[#daebff] rounded-full rounded-tl-none">
-    Sign Up
-  </button></div>
-  )
-}
+    <>
+      <button
+        className={`${backgroundColor} ${width} h-14 ${isRounded} ${textColor} ${
+          isOutlined ? "border border-[#0075ff]" : ""
+        }`}
+      >
+        {text}
+      </button>
+    </>
+  );
+};
 
-export default Button
+export default Button;
