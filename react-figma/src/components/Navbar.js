@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,28 +14,24 @@ const Navbar = () => {
         <div className="flex flex-col justify-center items-center">
           <div className="container mx-auto my-4 flex justify-between">
             <div className="w-[30%] md:w-[20%] h-12 cursor-pointer">
-              <img
-                src={'/images/logo.png.png'}
-                alt="logo"
-                
-              />
+              <img src={"/images/logo.png.png"} alt="logo" />
             </div>
             <div className="hidden w-[40%] lg:flex justify-center items-center">
               <ul className="flex space-x-10 text-[14px] font-normal">
                 <li>
-                  <a href="https://">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="https://">Services</a>
+                  <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <a href="https://">About</a>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <a href="https://">Project</a>
+                  <Link to="/project">Project</Link>
                 </li>
                 <li>
-                  <a href="https://">Help</a>
+                  <Link to="/help">Help</Link>
                 </li>
               </ul>
             </div>
@@ -88,35 +85,34 @@ const Navbar = () => {
 
       {/* Hamburger option menu for small & mediuem screen */}
       {isMobileMenuOpen && (
-      <div
-        id="mobileMenu"
-        className="lg:hidden h-[320px] pl-10 py-4 bg-backgDblue text-black text-left font-medium text-xl rounded-sm"
-        
-      >
-        <ul className="space-y-4">
-          <li>
-            <a href="https://">Home</a>
-          </li>
-          <li>
-            <a href="https://">Services</a>
-          </li>
-          <li>
-            <a href="https://">About</a>
-          </li>
-          <li>
-            <a href="https://">Project</a>
-          </li>
-          <li>
-            <a href="https://">Help</a>
-          </li>
-          <li>
-            <a href="https://">Sign In</a>
-          </li>
-          <li>
-            <a href="https://">Sign Up</a>
-          </li>
-        </ul>
-      </div>
+        <div
+          id="mobileMenu"
+          className="lg:hidden h-[320px] pl-10 py-4 bg-backgDblue text-black text-left font-medium text-xl rounded-sm"
+        >
+          <ul className="space-y-4">
+            <li>
+              <a href="https://">Home</a>
+            </li>
+            <li>
+              <a href="https://">Services</a>
+            </li>
+            <li>
+              <a href="https://">About</a>
+            </li>
+            <li>
+              <a href="https://">Project</a>
+            </li>
+            <li>
+              <a href="https://">Help</a>
+            </li>
+            <li>
+              <a href="https://">Sign In</a>
+            </li>
+            <li>
+              <a href="https://">Sign Up</a>
+            </li>
+          </ul>
+        </div>
       )}
     </>
   );

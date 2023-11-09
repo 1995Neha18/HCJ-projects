@@ -1,8 +1,8 @@
 import React from "react";
 
 const Button = ({
-  backgroundColor = "#0075ff",
-  textColor = "white",
+  backgroundColor = "bg-[#0075ff]",
+  textColor = "text-white",
   text,
   isRounded = "rounded-full rounded-tl-none",
   width = "w-full md:w-[204px]",
@@ -22,3 +22,5 @@ const Button = ({
 };
 
 export default Button;
+
+
