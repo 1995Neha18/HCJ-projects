@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,9 +38,12 @@ const Navbar = () => {
             </div>
             <div className="hidden lg:block w-[33%]">
               <button className="w-40 h-12 text-[#0075FF]">Sign In</button>
-              <button className="w-40 h-12 text-[#0075FF] bg-[#daebff] rounded-full rounded-tl-none">
-                Sign Up
-              </button>
+              <Button
+                backgroundColor="bg-[#daebff]"
+                text={"Sign Up"}
+                textColor="text-[#0075FF]"
+                width="w-40"
+              />
             </div>
 
             {/* Hamburger icon */}
