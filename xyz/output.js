@@ -23,6 +23,28 @@
 // console.log(typeof NAN)
 
 // *Problem: 2
+// calculate the frequency of  letter in a string "aabsssd".
+
+const String = "aabsssd";
+
+function occurrence(str){
+ const obj = {};
+
+ for(let i = 0; i < str.length; i++){
+    if(obj[str[i]] === undefined){
+     obj[str[i]] = 1;
+    }
+    else {
+     obj[str[i]]++;
+    }
+    // obj[str[i]] = obj[str[i]] == undefined ? obj[str[i]] = 1 : obj[str[i]] + 1;
+    // obj[str[i]] = obj[str[i]] === undefined ? 1 : obj[str[i]] + 1;
+ }
+ console.log(obj);
+}
+occurrence(String);
+
+// *Problem: 3
 //Count the number of each fruits without repeating the name ofnthe fruits which occurs again.
 // const fruits = [
 //   { Apple: 4, Orange: 7, Grapes: 3 },
@@ -64,20 +86,20 @@
 
 // console.log(countedFruits);
 
-// *Problem: 3
+// *Problem: 4
 // create a function to check if string is Anagram or not.
 
-const firstLetter = "Silent";
-const secondLetter = "Listen";
+// const firstLetter = "Silent";
+// const secondLetter = "Listen";
 
-function isAnagram(S1, S2){
-  let a = S1.toLowerCase();
-  let b = S2.toLowerCase();
+// function isAnagram(S1, S2){
+//   let a = S1.toLowerCase();
+//   let b = S2.toLowerCase();
 
-  a = a.split("").sort().join("");
-  b = b.split("").sort().join("");
+//   a = a.split("").sort().join("");
+//   b = b.split("").sort().join("");
 
-  return a === b;
-}
+//   return a === b;
+// }
 
-console.log(isAnagram(firstLetter, secondLetter));
+// console.log(isAnagram(firstLetter, secondLetter));
