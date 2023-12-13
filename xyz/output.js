@@ -25,24 +25,24 @@
 // *Problem: 2
 // calculate the frequency of  letter in a string "aabsssd".
 
-const String = "aabsssd";
+// const String = "aabsssd";
 
-function occurrence(str){
- const obj = {};
+// function occurrence(str){
+//  const obj = {};
 
- for(let i = 0; i < str.length; i++){
-    if(obj[str[i]] === undefined){
-     obj[str[i]] = 1;
-    }
-    else {
-     obj[str[i]]++;
-    }
-    // obj[str[i]] = obj[str[i]] == undefined ? obj[str[i]] = 1 : obj[str[i]] + 1;
-    // obj[str[i]] = obj[str[i]] === undefined ? 1 : obj[str[i]] + 1;
- }
- console.log(obj);
-}
-occurrence(String);
+//  for(let i = 0; i < str.length; i++){
+//     if(obj[str[i]] === undefined){
+//      obj[str[i]] = 1;
+//     }
+//     else {
+//      obj[str[i]]++;
+//     }
+//     // obj[str[i]] = obj[str[i]] == undefined ? obj[str[i]] = 1 : obj[str[i]] + 1;
+//     // obj[str[i]] = obj[str[i]] === undefined ? 1 : obj[str[i]] + 1;
+//  }
+//  console.log(obj);
+// }
+// occurrence(String);
 
 // *Problem: 3
 //Count the number of each fruits without repeating the name ofnthe fruits which occurs again.
@@ -103,3 +103,28 @@ occurrence(String);
 // }
 
 // console.log(isAnagram(firstLetter, secondLetter));
+
+// *Problem: 4
+
+var x = 10; // Global variable declaration and initialization
+function greet() {
+  // this function creates it's own execution context so here it cannot access GEC variable values.
+  //This refers to the local variable x within the function scope
+  console.log(x); // value of x here is assigned as undefined
+  var x = 5;
+}
+greet(); // output: undefined
+
+// Let's understand the concept behind this code that how it works
+// the above code will look like this after the application of javascript hoisting concept on var keyword.
+function greet() {
+  var x; // Declaration is hoisted
+  console.log(x); // At this point, x is undefined
+  x = 5; // Initialization
+}
+
+//Note: As a result, when console.log(x) is executed,
+//the local variable x exists but hasn't been assigned a value yet.
+//Therefore, it logs undefined to the console.
+//It's essential to understand that the var declaration is hoisted,
+//but the initialization remains in place.
