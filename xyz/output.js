@@ -104,27 +104,43 @@
 
 // console.log(isAnagram(firstLetter, secondLetter));
 
-// *Problem: 4
+// *Problem: 5
+// var x = 10; // Global variable declaration and initialization
+// function greet() {
+//   // this function creates it's own execution context so here it cannot access GEC variable values.
+//   //This refers to the local variable x within the function scope
+//   console.log(x); // value of x here is assigned as undefined
+//   var x = 5;
+// }
+// greet(); // output: undefined
 
-var x = 10; // Global variable declaration and initialization
-function greet() {
-  // this function creates it's own execution context so here it cannot access GEC variable values.
-  //This refers to the local variable x within the function scope
-  console.log(x); // value of x here is assigned as undefined
-  var x = 5;
-}
-greet(); // output: undefined
-
-// Let's understand the concept behind this code that how it works
-// the above code will look like this after the application of javascript hoisting concept on var keyword.
-function greet() {
-  var x; // Declaration is hoisted
-  console.log(x); // At this point, x is undefined
-  x = 5; // Initialization
-}
+// // Let's understand the concept behind this code that how it works
+// // the above code will look like this after the application of javascript hoisting concept on var keyword.
+// function greet() {
+//   var x; // Declaration is hoisted
+//   console.log(x); // At this point, x is undefined
+//   x = 5; // Initialization
+// }
 
 //Note: As a result, when console.log(x) is executed,
 //the local variable x exists but hasn't been assigned a value yet.
-//Therefore, it logs undefined to the console.
+//Therefore, it logs undefined to the console as javascript compiler runs the code line by line(single-threaded).
 //It's essential to understand that the var declaration is hoisted,
 //but the initialization remains in place.
+
+// *Problem: 6
+//Convert an array into an object.
+
+// const arr = [4,5,7,8,2];
+// // {1st method}
+// // const obj = Object.assign({}, arr);
+
+// // {2nd method}
+// const obj = arr.reduce(function(acc, item, i){
+//    acc[i] = item;
+//    return acc;  // initially acc will be an empty object, after loop runs it will assign index as key & numbers inside array as value.
+
+// }, {})
+// console.log(obj);
+
+
