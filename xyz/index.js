@@ -36,11 +36,22 @@
 
 // *Problem:1
 
-let count = 0;
-(function printCount() {
-  if (count === 0) {
-    let count = 1; // shadowing means here the value of count is being shadowed inside function scope
-    console.log(count); // 1
-   }
-   console.log(count); // 0
-})();
+// let count = 0;
+// (function printCount() {
+//   if (count === 0) {
+//     let count = 1; // shadowing means here the value of count is being shadowed inside function scope
+//     console.log(count); // 1
+//    }
+//    console.log(count); // 0
+// })();
+
+// *Problem:2
+
+function createBase(num) {
+  return function (innerNum) {
+    return innerNum + num;
+  };
+}
+var addSix = createBase(6);
+console.log(addSix(10)); // 16
+console.log(addSix(21)); // 27
