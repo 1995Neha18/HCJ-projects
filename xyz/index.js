@@ -105,14 +105,23 @@
 // }
 // a();
 
-function b() {
-  for (var i = 0; i < 3; i++) {
-    setTimeout(function (i) {
-      console.log(i);
-    }, i * 1000, i);
-  }
-}
-b();
+// function b() {
+//   for (var i = 0; i < 3; i++) {
+//     setTimeout(function (i) {
+//       console.log(i);
+//     }, i * 1000, i);
+//   }
+// }
+// b();
+
+// for (var i = 0; i < 3; i++) {
+//   function inner(i) {
+//     setTimeout(function () {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+//   inner(i);
+// }
 
 // function c() {
 //   for (let i = 0; i < 3; i++) {
@@ -122,3 +131,35 @@ b();
 //   }
 // }
 // c();
+
+// *Problem:5 Make this run only once
+// let sub = "JavaScript";
+// function isStarted(){
+//   console.log("Learning",sub)
+// }
+// isStarted();
+// isStarted();
+// isStarted();
+// isStarted();
+// isStarted();
+
+//Now, If I want to make the above function run only once.
+let sub = "JavaScript";
+function isStarted() {
+  let called = 0;
+
+  return function () {
+    if (called > 0) {
+      console.log("Not Started");
+    } else {
+      console.log("Learning", sub);
+      called++;
+    }
+  };
+}
+let getToKnow = isStarted();
+getToKnow();
+getToKnow();
+getToKnow();
+getToKnow();
+
