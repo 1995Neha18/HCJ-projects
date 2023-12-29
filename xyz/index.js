@@ -47,11 +47,49 @@
 
 // *Problem:2
 
-function createBase(num) {
-  return function (innerNum) {
-    return innerNum + num;
-  };
+// function createBase(num) {
+//   return function (innerNum) {
+//     console.log(innerNum + num);
+//   };
+// }
+// var addSix = createBase(6);
+// addSix(10); // 16
+// addSix(21); // 27
+
+// *Problem:3 Optimisation using closure
+
+// function find(index) {
+//   let a = [];
+//   for (let i = 0; i < 1000000; i++) {
+//     a[i] = i * i;
+//   }
+//   console.log(a[index]);
+// }
+
+// console.time("6");
+// find(6);
+// console.timeEnd("6");
+// console.time("12");
+// find(12);
+// console.timeEnd("12");
+
+// let's optimize this
+
+function find() {
+  let a = [];
+  for (let i = 0; i < 1000000; i++) {
+    a[i] = i * i;
+
+   }
+    return function (index) {
+      console.log(a[index]);
+    };
 }
-var addSix = createBase(6);
-console.log(addSix(10)); // 16
-console.log(addSix(21)); // 27
+
+const closure = find()
+console.time("6");
+closure(6);
+console.timeEnd("6");
+console.time("50");
+closure(50);
+console.timeEnd("50");
