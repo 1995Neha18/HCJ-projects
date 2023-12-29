@@ -106,10 +106,19 @@
 // a();
 
 function b() {
-  for (let i = 0; i < 3; i++) {
-    setTimeout(function () {
+  for (var i = 0; i < 3; i++) {
+    setTimeout(function (i) {
       console.log(i);
-    }, i * 1000);
+    }, i * 1000, i);
   }
 }
 b();
+
+// function c() {
+//   for (let i = 0; i < 3; i++) {
+//     setTimeout(function () {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+// }
+// c();
