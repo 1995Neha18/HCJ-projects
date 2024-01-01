@@ -28,3 +28,11 @@ a[b] = 123; // a["[object object"]
 a[c] = 456; // a["[object object"]
 
 console.log(a[b]); // 456
+
+// *Problem-3. What's the output of this
+
+console.log([..."Lydia"]);
+
+const user = {name: "Lydia", age: "24"}
+const admin = {admin: true, ...user}
+console.log(admin);
