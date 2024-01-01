@@ -144,22 +144,26 @@
 // isStarted();
 
 //Now, If I want to make the above function run only once.
-let sub = "JavaScript";
-function isStarted() {
-  let called = 0;
+// let sub = "JavaScript";
+// function isStarted() {
+//   let called = 0;
 
-  return function () {
-    if (called > 0) {
-      console.log("Not Started");
-    } else {
-      console.log("Learning", sub);
-      called++;
-    }
-  };
-}
-let getToKnow = isStarted();
-getToKnow();
-getToKnow();
-getToKnow();
-getToKnow();
+//   return function () {
+//     if (called > 0) {
+//       console.log("Not Started");
+//     } else {
+//       console.log("Learning", sub);
+//       called++;
+//     }
+//   };
+// }
+// let getToKnow = isStarted();
+// getToKnow();
+// getToKnow();
+// getToKnow();
+// getToKnow();
+
+// *Problem:6
+
+
 
