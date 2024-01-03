@@ -18,10 +18,21 @@
 
 // *Problem-2. filter function
 
-const array1 = [2,4,6,8,10];
+// const array1 = [2,4,6,8,10];
 
-const result = array1.filter((item) => {
-  if( item > 3)
-  return item;
-})
+// const result = array1.filter((item) => {
+//   if( item > 3)
+//   return item;
+// })
+// console.log(result);
+
+// *Problem-3. reduce function, when we want a single value result.
+
+const array2 = [2,4,6,8,10];
+
+const result = array2.reduce((acc,item) => {
+  return acc * item;
+},1)
+
 console.log(result);
+
