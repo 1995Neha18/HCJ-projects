@@ -28,11 +28,17 @@
 
 // *Problem-3. reduce function, when we want a single value result.
 
-const array2 = [2,4,6,8,10];
+// const array2 = [2,4,6,8,10];
 
-const result = array2.reduce((acc,item) => {
-  return acc * item;
-},1)
+// const result = array2.reduce((acc,item) => {
+//   return acc * item;
+// },1)
 
-console.log(result);
+// console.log(result);
+
+// *Problem-4. Slice function, it takes two argument start and end index.
+
+// const array3 = [2,4,6,8,10];
+// const newArray = array3.slice(0,3)
+// console.log(newArray);
 
