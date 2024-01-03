@@ -1,9 +1,17 @@
 // *Problem-1. Some array in-built function
 
-const nums = [2,4,8,10];
+// const nums = [2,4,8,10];
 
-const newArray = nums.map((number) => {
-  return number + 2;
+// const newArray = nums.map((number) => {
+//   return number + 2;
+// })
+
+// console.log(newArray); // map function will always return a new array and it always takes a callback function.
+
+// const array = [2,4,8,10];
+
+const array = [2,4,6,8,10];
+array.forEach((num) => {
+  console.log(num*2);
 })
-
-console.log(newArray); // map function will always return a new array and it always takes a callback function.
+// forEach loop never returns a new array.
