@@ -36,9 +36,15 @@
 
 // console.log(result);
 
-// *Problem-4. Slice function, it takes two argument start and end index.
+// *Problem-4. Slice function, it takes two arguments start and end index.
 
 // const array3 = [2,4,6,8,10];
 // const newArray = array3.slice(0,3)
 // console.log(newArray);
+
+// *Problem-5. Splice function, it takes three arguments start, no. of items to be deleted and adds a new element instead of deletion index.
+
+const array3 = [2,4,6,8,10];
+array3.splice(0,3,5)
+console.log(array3);
 
