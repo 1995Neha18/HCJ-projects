@@ -10,8 +10,18 @@
 
 // const array = [2,4,8,10];
 
-const array = [2,4,6,8,10];
-array.forEach((num) => {
-  console.log(num*2);
-})
+// const array = [2,4,6,8,10];
+// array.forEach((num) => {
+//   console.log(num*2);
+// })
 // forEach loop never returns a new array.
+
+// *Problem-2. filter function
+
+const array1 = [2,4,6,8,10];
+
+const result = array1.filter((item) => {
+  if( item > 3)
+  return item;
+})
+console.log(result);
