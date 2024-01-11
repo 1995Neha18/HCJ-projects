@@ -44,7 +44,22 @@
 
 // *Problem-5. Splice function, it takes three arguments start, no. of items to be deleted and adds a new element instead of deletion index.
 
-const array3 = [2,4,6,8,10];
-array3.splice(0,3,5)
-console.log(array3);
+// const array3 = [2,4,6,8,10];
+// array3.splice(0,3,5)
+// console.log(array3);
 
+// *Problem-6. Find the maximum in the given array.
+
+
+// let arr = [1, 2, 3, 4, 5];
+function findMax(arr) {
+  let max = -Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  console.log(max);
+}
+
+findMax([1, 2, 3, 4, 5]);
