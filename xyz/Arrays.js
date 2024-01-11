@@ -50,16 +50,36 @@
 
 // *Problem-6. Find the maximum in the given array.
 
-
 // let arr = [1, 2, 3, 4, 5];
-function findMax(arr) {
-  let max = -Infinity;
+// function findMax(arr) {
+//   let max = -Infinity;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   console.log(max);
+// }
+
+// findMax([1, 2, 3, 4, 5]);
+
+// *Problem-7. Find the second maximum in the given array.
+
+let arr = [12, 35, 1, 8, 34, 35];
+
+function secMax(arr) {
+  let largest = -1;
+  let secondLargest = -1;
+
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
+    if (arr[i] > largest) {
+      secondLargest = largest;
+      largest = arr[i];
+    } else if (arr[i] != largest && arr[i] > secondLargest) {
+      secondLargest = arr[i];
     }
   }
-  console.log(max);
+  return secondLargest;
 }
 
-findMax([1, 2, 3, 4, 5]);
+console.log(secMax([12, 35, 1, 8, 34, 35]));
